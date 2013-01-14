@@ -27,6 +27,10 @@ class Option extends WebHelper {
 	public function __toString() {
 		return $this->text;
 	}
+	
+	public function toString() {
+		return $this->__toString();
+	}
 }
 
 class Sentido extends Option {
@@ -107,23 +111,44 @@ class Dia extends Option {
 		if ($this->horarios != null) {
 			return $this->horarios;
 		} else {
+			$this->horarios = array();
 			$sentido = $this->linha->sentido->value;
 			$linha = $this->linha->value;
 			$dia = $this->value;
 			$htmlTabela = $this->getContentsFromUrl('http://www.soul.com.br/site/itinerarios.php?sentido='.$sentido.'&linha='.rawurlencode($linha).'&dia='.$dia);
-			
+			foreach ($htmlTabela->find('tr[bgcolor]') as $linha) {
+				$colunas = $linha->find('td');
+				
+				$hora = $colunas[0]->text();
+				$desc = trim(str_replace('&nbsp;', ' ', $colunas[1]->text()));
+				
+				$this->horarios[] = new Horario($this->linha->sentido->text, $this->linha->text, $this->text, $hora, $desc);
+			}
+			return $this->horarios;
 		}
-		
 	}
 }
 
 class Horario extends WebHelper {
+
 	public $sentido = '';
 	public $linha = '';
 	public $dia = '';
 	public $hora = '';
 	public $descricao = '';
-	public $itinerario = array();
+	//public $itinerario = array();
+	
+	public function __construct($sentido, $linha, $dia, $hora, $descricao) {
+		$this->sentido = $sentido;
+		$this->linha = $linha;
+		$this->dia = $dia;
+		$this->hora = $hora;
+		$this->descricao = $descricao;
+	}
+	
+	public function getLinhaTabela() {
+		return (array)$this;
+	}
 }
 
 class Soul extends WebHelper {
@@ -132,6 +157,7 @@ class Soul extends WebHelper {
 	
 	public function __construct() {
 		$horarios = $this->loadFromSoul();
+		echo json_encode($horarios);
 	}
 	
 	private function loadFromSoul() {
@@ -142,10 +168,12 @@ class Soul extends WebHelper {
 				foreach ($linha->getDias() as $dia) {
 					foreach ($dia->getHorarios() as $horario) {
 						$tabelahorarios[] = $horario->getLinhaTabela();
+						if (count($tabelahorarios) > 10) {break 4;}
 					}
 				}
 			}
 		}
+		return $tabelahorarios;
 	}
 	
 	private function loadSentidos() {
