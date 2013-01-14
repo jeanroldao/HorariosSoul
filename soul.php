@@ -168,7 +168,6 @@ class Soul extends WebHelper {
 				foreach ($linha->getDias() as $dia) {
 					foreach ($dia->getHorarios() as $horario) {
 						$tabelahorarios[] = $horario->getLinhaTabela();
-						if (count($tabelahorarios) > 10) {break 4;}
 					}
 				}
 			}
