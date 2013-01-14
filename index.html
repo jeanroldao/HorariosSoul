@@ -1,0 +1,527 @@
+<html>
+<head>
+<style>
+
+table.borda {
+	border-collapse: collapse;
+}
+
+table.borda td {
+	border: 1px solid black;
+	boder-collapse: collapse;
+	padding: 3px;
+}
+</style>
+<script src="data.js"></script>
+<script src="cordova.js"></script>
+<script src="jquery.js"></script>
+<script>
+//tabelaHorarios[sentido][linha][dia]
+var tabelaHorarios = [];
+
+function insertHorario(sentido, linha, dia, raw) {
+  //tabelaHorarios[tabela[1]][tabela[0]][tabela[2]] = readRaw(readRaw[3]);
+  /*
+  if (typeof tabelaHorarios[sentido] == 'undefined') {
+    tabelaHorarios[sentido] = {};
+  }
+  
+  if (typeof tabelaHorarios[sentido][linha] == 'undefined') {
+    tabelaHorarios[sentido][linha] = {};
+  }
+  
+  tabelaHorarios[sentido][linha][dia] = readRaw(raw);
+  */
+  var horarios = readRaw(raw);
+  
+  for (var hora in horarios) {
+    var dados = {
+      "sentido": sentido,
+      "linha": linha,
+      "dia": dia,
+      "hora": hora,
+      "descricao": horarios[hora]
+    }
+    tabelaHorarios.push(dados);
+    
+  }
+}
+
+function readRaw(str) {
+  if (typeof str == 'undefined') {
+    throw new Error('raw undefined');
+  }
+  
+  var horarios = {};
+  
+  if (typeof str == 'string') {
+  
+  
+    var linhas = str.split("\n");
+    for (var i = 0; i < linhas.length; i++) {
+      var linha = linhas[i].split("\t");
+	  horarios[linha[0]] = linha[1].trim();
+    }
+  } else {
+    
+	//pode ser um array pronto vindo do importador do site da soul
+    return str;
+  }
+  return horarios;
+}
+
+function statistics() {
+  //tabelaHorarios
+  var linhasCadastradas = {};
+  for (var i = 0; i < tabelaHorarios.length; i++ ) {
+    if (!linhasCadastradas[tabelaHorarios[i].linha]) {
+      linhasCadastradas[tabelaHorarios[i].linha] = 0;
+    }
+    linhasCadastradas[tabelaHorarios[i].linha]++;
+  }
+  return linhasCadastradas;
+}
+
+function getDias() {
+  var linhasCadastradas = {};
+  for (var i = 0; i < tabelaHorarios.length; i++ ) {
+    if (!linhasCadastradas[tabelaHorarios[i].dia]) {
+      linhasCadastradas[tabelaHorarios[i].dia] = 0;
+    }
+    linhasCadastradas[tabelaHorarios[i].dia]++;
+  }
+  return linhasCadastradas;
+}
+
+function busca(filtro) {
+  //tabelaHorarios
+  
+  var listraFiltrada = [];
+  for (var i = 0; i < tabelaHorarios.length; i++ ) {
+    if (filtro(tabelaHorarios[i])) {
+      listraFiltrada.push(tabelaHorarios[i]);
+    }
+  }
+  listraFiltrada.sort(function(a,b){
+    //return a.hora < b.hora;
+    if (a.hora < b.hora) {
+      return -1;
+    } else if (a.hora > b.hora) {
+      return 1;
+    } else if(a.descricao < b.descricao) {
+      return -1;
+    } else if (a.descricao > b.descricao) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+  return listraFiltrada;
+}
+
+function insertHtml(tag) {
+  var div = document.createElement('div');
+  div.innerHTML = tag;
+  //conteudo.appendChild(div.children);
+  for (var i = 0; i < div.children.length; i++) {
+    conteudo.appendChild(div.children[i]);
+  }
+}
+
+
+function loadFromSoul() {
+  getContentsFromUrl('http://www.soul.com.br/site/itinerarios.php?', function(html){
+	
+	var sentidos = [], sentidosHtml = [], tabelalinhas = [];
+	
+	$(html).find('#sentido option').each(function(){
+	  if (['ALV-POA', 'POA-ALV'].indexOf($(this).text()) > -1 ) {
+	    sentidos.push([this.value, $(this).text()]);
+	  }
+	});
+	
+	var total = sentidos.length;
+	var sentidoAtual = sentidos.shift();
+	
+	function getNextSentido() {
+	  getContentsFromUrl('http://www.soul.com.br/site/itinerarios.php?sentido='+sentidoAtual[0], function(htmlSentido){
+	    //console.log([sentidos.length, htmlSentido.length]);
+		sentidosHtml.push([sentidoAtual, htmlSentido]);
+		
+		refreshPct(((total - sentidos.length) / total) * 100);
+		
+	    if (sentidos.length > 0) {
+		  sentidoAtual = sentidos.shift();
+	      getNextSentido();
+	    } else {
+		  refreshPct(false);
+		  //console.log(sentidosHtml);
+		  var linhas = [], linhasUrl = [], linhasHtml = {};
+		  for (var kSentido = 0; kSentido < sentidosHtml.length; kSentido++) {
+		  
+			
+		    $(sentidosHtml[kSentido][1]).find('#linha option').each(function(){
+			  if (this.value) {
+			  
+			    //console.log(this.value);
+				//linhas.push([this.value, $(this).text()]);
+				var linhaAtual = this.value;
+				
+		        $(sentidosHtml[kSentido][1]).find('#dia option').each(function(){
+			      if (this.value) {
+				    var urlLinhaDia = 'http://www.soul.com.br/site/itinerarios.php?sentido='+sentidosHtml[kSentido][0][0]+'&linha='+escape(linhaAtual)+'&dia='+this.value;
+				    linhasUrl.push([sentidosHtml[kSentido][0][1]+'|'+linhaAtual+'|'+$(this).text(), urlLinhaDia]);
+			        //dias.push([this.value, $(this).text()]);
+			      }
+			    });
+			  }
+			});
+		  }
+		  //console.log(linhasUrl);
+		  var total = linhasUrl.length;
+		  
+		  var urlAtual = linhasUrl.shift();
+		  
+		  function getNextUrl() {
+		    getContentsFromUrl(urlAtual[1], function(htmlLinha){
+			  refreshPct(((total - linhasUrl.length) / total) * 100);
+			  linhasHtml[urlAtual[0]] = htmlLinha;
+			  
+	          if (linhasUrl.length > 0) {
+		        urlAtual = linhasUrl.shift();
+	            getNextUrl();
+	          } else {
+			    refreshPct(false);
+			    //console.log(linhasHtml);
+				var linhasTabela = [];
+				
+				for (var kCodLinha in linhasHtml) {
+				  var aCodLinha = kCodLinha.split('|');
+				  
+				  $(linhasHtml[kCodLinha]).find('table tr').each(function(){
+				    var hora = $(this).find('td:eq(0)').text().trim();
+				    var desc = $(this).find('td:eq(1)').text().trim();
+					
+				    if (hora) {
+					  //horarios[hora] = desc;
+					  var dados = {
+						"sentido": aCodLinha[0],
+						"linha": aCodLinha[1],
+						"dia": aCodLinha[2],
+						"hora": hora,
+						"descricao": desc
+					  }
+					  linhasTabela.push(dados);
+					}
+				  });
+				  
+				}
+				setTabelaStorage((new Date()).getTime(), linhasTabela);
+				carregaOpt()
+				//console.log(linhasParaInserir);
+			  }
+			  
+			});
+		  }
+		  getNextUrl();
+		}
+	  });
+	}
+	getNextSentido();
+	
+    //tabelaHorarios = [];
+	//insertHorario(sentido, linha, dia, raw);
+  });
+}
+
+function loadFromStorage() {
+  tabelaHorarios = JSON.parse(localStorage.tabelaHorarios || '[]');
+}
+function saveToStorage() {
+  localStorage.tabelaHorarios = JSON.stringify(tabelaHorarios);
+}
+
+function getTabelaAtiva() {
+  return getTabelaStorage(localStorage.tabelaAtiva || 0);
+}
+function getTabelaStorage(id) {
+  return JSON.parse(localStorage['tabelaHorarios_'+id] || 'false');
+}
+function setTabelaStorage(id, tabela) {
+  localStorage['tabelaHorarios_'+id] = JSON.stringify(tabela);
+  var tabelas = getListTabelas();
+  if (tabelas.indexOf(id) < 0) {
+    tabelas.push(id);
+	setListTabelas(tabelas);
+  }
+}
+function getListTabelas() {
+  return JSON.parse(localStorage.tabelas || '[0]');
+}
+function setListTabelas(list) {
+  localStorage.tabelas = JSON.stringify(list);
+}
+
+function carregaDadosTabela() {
+  
+  if (!localStorage.tabelaHorarios_0) {
+    localStorage.tabelaHorarios_0 = atualizaStorage(dadosRaw);
+	localStorage.tabelaAtiva = 0;
+  }
+  tabelaHorarios = getTabelaAtiva();
+}
+
+
+var conteudo = null;
+onload = function () {
+
+  conteudo = document.getElementById('conteudo');
+  conteudo.innerHTML = '';
+
+  document.body.style.backgroundColor = 'lightgrey'
+  
+  carregaDadosTabela();
+  
+  insertHtml('<h1>Horários Soul</h1>');
+  
+  insertHtml('<span>Pesquisar</span>');
+  var campoPesquisa = document.createElement('input');
+  conteudo.appendChild(campoPesquisa);
+  
+  insertHtml('<br />');
+  
+  
+  var horaini = new Date();
+  horaini.setHours(horaini.getHours()-1);
+  
+  insertHtml('<span>Hora inicial</span>');
+  var campoHoraIni = document.createElement('input');
+  campoHoraIni.value = horaini.toLocaleTimeString();
+  conteudo.appendChild(campoHoraIni);
+  
+  insertHtml('<br />');
+  
+  var horafim = new Date();
+  horafim.setHours(horafim.getHours() + 1);
+  
+  insertHtml('<span>Hora final</span>');
+  var campoHoraFim = document.createElement('input');
+  campoHoraFim.value = horafim.toLocaleTimeString();
+  conteudo.appendChild(campoHoraFim);
+  
+  insertHtml('<br />');
+  
+  insertHtml('<span>Dia</span>');
+  var selectDia = document.createElement('select');
+  var opcoesDia = ['DIA ÚTIL', 'SABADO', 'DOMINGO'];
+  for (var i = 0; i < opcoesDia.length; i++) {
+    var optionDia = document.createElement('option');
+    optionDia.value = opcoesDia[i];
+    optionDia.text = opcoesDia[i];
+    selectDia.add(optionDia);
+  }
+  conteudo.appendChild(selectDia);
+  insertHtml('<br />');
+
+  insertHtml('<span>Sentido</span>');
+  var selectSentido = document.createElement('select');
+  var opcoesSentido = ['ALV-POA', 'POA-ALV'];
+  for (var i = 0; i < opcoesSentido.length; i++) {
+    var optionSentido = document.createElement('option');
+    optionSentido.value = opcoesSentido[i];
+    optionSentido.text = opcoesSentido[i];
+    selectSentido.add(optionSentido);
+  }
+  conteudo.appendChild(selectSentido);
+  insertHtml('<br />');
+
+  
+  var linhas = statistics();
+  
+  var selectLinhas = document.createElement('select');
+  selectLinhas.multiple = true;
+  
+  for (var linha in linhas) {
+    var optionLinha = document.createElement('option');
+	optionLinha.value = linha;
+	optionLinha.text = linha;
+	selectLinhas.add(optionLinha);
+  }
+  conteudo.appendChild(selectLinhas);
+  insertHtml('<br />');
+  
+  var botaoPesquisa = document.createElement('input');
+  botaoPesquisa.type = 'button';
+  botaoPesquisa.value = 'Pesquisar';
+  botaoPesquisa.onclick = function() {
+  
+    var selecao = [];
+    for (var i = 0; i < selectLinhas.options.length; i++) {
+	  if (selectLinhas.options[i].selected) {
+	    //selecao[selectLinhas.options[i].value] = true;
+	    selecao.push(selectLinhas.options[i].value);
+	  }
+	}
+	//console.log(selecao);
+	var resultado = busca(function(item){
+	  
+	  return (item.descricao.toLowerCase().indexOf(campoPesquisa.value.toLowerCase()) != -1)
+	      && (selecao.length == 0 || selecao.indexOf(item.linha) != -1)
+	      && item.dia == selectDia.options[selectDia.selectedIndex].value
+	      && item.sentido == selectSentido.options[selectSentido.selectedIndex].value
+		  && item.hora >= campoHoraIni.value
+		  && item.hora <= campoHoraFim.value;
+	});
+	//console.log(resultado);
+	montaGrid(resultado);
+  };
+  
+  conteudo.appendChild(botaoPesquisa);
+  
+  var divOpt = document.createElement('div');
+  
+  conteudo.parentNode.appendChild(divOpt);
+  $(divOpt).hide();
+  
+  var btnOpt = document.createElement('input');
+  btnOpt.type = 'button';
+  btnOpt.value = 'Opções';
+  btnOpt.onclick = function() {
+    $(conteudo).hide();
+	$(divOpt).show();
+	carregaOpt();
+  }
+  conteudo.appendChild(btnOpt);
+
+  var btnVoltar = document.createElement('input');
+  btnVoltar.type = 'button';
+  btnVoltar.value = 'Voltar';
+  btnVoltar.onclick = function() {
+    $(divOpt).hide();
+	$(conteudo).show();
+  }
+  divOpt.appendChild(btnVoltar);
+  
+  var btnAtualizar = document.createElement('input');
+  btnAtualizar.type = 'button';
+  btnAtualizar.value = 'Atualizar';
+  btnAtualizar.id = 'btnAtualizar';
+  btnAtualizar.onclick = function() {
+    if (this.value == 'Atualizar') {
+      loadFromSoul();
+	}
+  }
+  divOpt.appendChild(btnAtualizar);
+  
+  var divAreaResumo = document.createElement('div');
+  divAreaResumo.id = 'divAreaResumo';
+  divAreaResumo.innerHTML = '{divAreaResumo}';
+  divOpt.appendChild(divAreaResumo);
+}
+
+function carregaOpt() {
+  var divAreaResumo = document.getElementById('divAreaResumo');
+  divAreaResumo.innerHTML = '';
+  var table = document.createElement('table');
+  table.className = 'borda';
+  divAreaResumo.appendChild(table);
+  criaLinha(table, ['id', 'linhas', 'ação']);
+  var tabs = getListTabelas();
+  for (var i = 0; i < tabs.length; i++) {
+    var btn = document.createElement('input');
+	btn.type = 'button';
+	btn.value = 'Ativar '+tabs[i];
+	btn.id = tabs[i];
+	btn.onclick = function(){
+	  localStorage.tabelaAtiva = this.id;
+	  carregaDadosTabela();
+	  carregaOpt()
+	}
+	if (localStorage.tabelaAtiva == btn.id) {
+	  btn.disabled = true;
+	}
+    criaLinha(table, [tabs[i], getTabelaStorage(tabs[i]).length, btn]);
+  }
+}
+
+function refreshPct(pct) {
+  if (!pct) {
+    document.getElementById('btnAtualizar').value = 'Atualizar';
+  } else {
+    document.getElementById('btnAtualizar').value = 'Atualizando ('+parseInt(pct)+'%)';
+  }
+}
+
+function montaGrid(lista) {
+
+  var table = getTable();
+  criaLinha(table, ['Hora', 'Linha', 'Descrição']);
+  for (var i = 0; i < lista.length; i++) {
+    var linha = lista[i];
+	criaLinha(table, [linha.hora, linha.linha, linha.descricao]);
+  }
+}
+
+var table = null;
+function getTable() {
+  if (table != null) {
+    table.parentNode.removeChild(table);
+  }
+  table = document.createElement('table');
+  table.className = 'borda';
+  conteudo.appendChild(table);
+  return table;
+}
+
+function criaLinha(table, campos) {
+  var tr = document.createElement('tr');
+  for (var i = 0; i < campos.length; i++) {
+    var td = document.createElement('td');
+	if (typeof campos[i] != 'object') {
+	  td.textContent = campos[i];
+	} else {
+	  td.appendChild(campos[i]);
+	}
+	tr.appendChild(td);
+  }
+  table.appendChild(tr);
+}
+
+function atualizaStorage(dadosRaw) {
+  //dadosRaw(dados.js)
+  for (var i = 0; i < dadosRaw.length; i++ ) {
+    var tabela = dadosRaw[i];
+	//console.log(tabela);
+	//tabelaHorarios[tabela[1]][tabela[0]][tabela[2]] = readRaw();
+	insertHorario(tabela[1], tabela[0], tabela[2], tabela[3]);
+  }
+  return JSON.stringify(tabelaHorarios);
+}
+
+function getContentsFromUrl(url, fCallback) {
+
+    var id = (new Date()).getTime();
+	//var url = 'http://jeanfarias.webcindario.com/rest.php?url=' + escape(url) + '&__=' + id + '&callback=?';
+	var url = 'rest.php?url=' + escape(url) + '&__=' + id + '&callback=?';
+    
+	$.getJSON(url, function(data) {
+	  fCallback(data);
+	}).error( function(){
+	  var jqcb = this.jsonpCallback;
+	  var urljs = 'http://jeanfarias.webcindario.com/restdata/rest'+id+'.js';
+	  window[jqcb] = function(data) {
+	    fCallback(data);
+		//window[jqcb] = null;
+		$.getJSON('http://jeanfarias.webcindario.com/rest.php?delete='+urljs+'&callback=?', nocallback);
+	  }
+	  $.getJSON(urljs+'?callback=?', nocallback);
+	});
+
+}
+function nocallback() {}
+</script>
+</head>
+<body>
+<div id="conteudo">{conteudo}</div>
+</body>
+</html>

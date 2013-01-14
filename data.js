@@ -1,0 +1,2209 @@
+
+var dadosRaw = [
+/*ALVORADA*/
+  ["ALVORADA", "ALV-POA", "DIA ÚTIL", "04:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+05:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+05:30	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+05:50	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+05:55	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+06:00	 Saída da parada 52 via Sertório até a Cairu  	[ ver ]\n\
+06:00	 Saída da parada 52 via Jd. Algarve, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+06:10	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:15	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+06:20	 Saída da parada 52 via Jd. Algarve, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+06:30	 Saída da parada 52 via Sertório até a Cairu  	[ ver ]\n\
+06:30	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:35	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+06:40	 Saída da parada 52 via Jd. Algarve, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+06:40	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:45	 Saída da Rua Wenceslau Fontoura parada 52 via São Borja ,Assis Brasil até o Centro  	[ ver ]\n\
+07:00	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:00	 Saída da parada 52 via Sertório até o Centro  	[ ver ]\n\
+07:15	 Saída da Rua Wenceslau Fontoura parada 52 via São Borja ,Assis Brasil até o Centro  	[ ver ]\n\
+07:20	 Saída da parada 52 via Sertório até o Centro  	[ ver ]\n\
+07:20	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:30	 Saída da parada 52 via Freeway até o Centro  	[ ver ]\n\
+07:31	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+07:40	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:45	 Saída da parada 52 via Freeway até o Centro  	[ ver ]\n\
+07:55	 Saída da parada 52 via Sertório até a Cairu  	[ ver ]\n\
+07:55	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+08:00	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+08:15	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+08:30	 Saída da Rua Wenceslau Fontoura parada 52 via São Borja ,Assis Brasil até o Centro  	[ ver ]\n\
+08:50	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+08:55	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+09:20	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+09:40	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+09:50	 Saída da Rua Wenceslau Fontoura parada 52 via São Borja ,Assis Brasil até o Centro  	[ ver ]\n\
+10:20	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+10:50	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+10:50	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+11:20	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+11:20	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+11:50	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+12:00	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+12:20	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+12:50	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+13:20	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+13:50	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+14:15	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+14:20	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+14:50	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+15:20	 Saída da Rua Wenceslau Fontoura parada 52 via São Borja ,Assis Brasil até o Centro  	[ ver ]\n\
+15:30	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+16:00	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+16:40	 Saída da Rua Wenceslau Fontoura parada 52 via São Borja ,Assis Brasil até o Centro  	[ ver ]\n\
+17:20	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+17:25	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+17:50	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+18:20	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+18:30	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+19:00	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+19:50	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+20:50	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+21:50	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+22:50	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["ALVORADA", "ALV-POA", "SABADO", "05:00	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+05:40	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+06:00	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:20	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+06:30	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+07:00	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+07:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+07:30	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+08:00	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+08:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+08:35	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+09:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+09:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+10:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+11:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+11:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+12:00	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+12:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+13:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+13:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+14:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+15:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+15:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+16:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+17:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+17:25	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+17:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+18:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+19:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+19:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+20:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+21:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+22:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+23:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+23:35	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["ALVORADA", "ALV-POA", "DOMINGO", "04:55	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+05:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+06:05	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:35	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+07:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+08:15	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+09:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+09:55	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+10:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+11:35	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+12:00	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+12:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+13:15	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+14:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+14:55	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+15:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+16:35	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+17:25	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+17:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+18:15	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+19:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+19:55	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+20:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+21:35	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+22:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+23:15	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["ALVORADA", "POA-ALV", "DIA ÚTIL", "00:02	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+06:10	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+06:57	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+07:20	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+07:30	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+07:59	 Saída do Centro via Assis Brasil, São Borja até a parada 52 Rua Wenceslau Fontoura  	[ ver ]\n\
+08:35	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+09:05	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+09:11	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+09:47	 Saída do Centro via Assis Brasil, São Borja até a parada 52 Rua Wenceslau Fontoura  	[ ver ]\n\
+10:23	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+10:50	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+10:59	 Saída do Centro via Assis Brasil, São Borja até a parada 52 Rua Wenceslau Fontoura  	[ ver ]\n\
+11:35	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+11:55	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+12:11	 Saída do Centro via Assis Brasil, São Borja até a parada 52 Rua Wenceslau Fontoura  	[ ver ]\n\
+12:30	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+12:47	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+13:08	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+13:35	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+13:40	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+14:10	 Saída do Centro via Assis Brasil, São Borja até a parada 52 Rua Wenceslau Fontoura  	[ ver ]\n\
+14:15	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+14:35	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+15:00	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+15:25	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+15:30	 Saída do Estádio Beira-Rio via Ipiranga, Jd. Algarve até a parada 52  	[ ver ]\n\
+15:30	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+15:40	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+16:05	 Saída do Centro via Assis Brasil, São Borja até a parada 52 Rua Wenceslau Fontoura  	[ ver ]\n\
+16:20	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+16:20	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+16:35	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+16:50	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+16:56	 Saída do Centro via Sertório até a parada 52  	[ ver ]\n\
+17:05	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+17:12	 Saída do Centro via Anchieta até a parada 52  	[ ver ]\n\
+17:15	 Saída da Cairu via Assis Brasil até a parada 52  	[ ver ]\n\
+17:20	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+17:29	 Saída do Centro via Sertório até a parada 52  	[ ver ]\n\
+17:40	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+17:40	 Saída da Cairu via Assis Brasil até a parada 52  	[ ver ]\n\
+17:40	 Saída do Estádio Beira-Rio via Ipiranga, Jd. Algarve até a parada 52  	[ ver ]\n\
+17:55	 Saída do Centro via Anchieta até a parada 52  	[ ver ]\n\
+17:55	 Saída da Cairu via Assis Brasil até a parada 52  	[ ver ]\n\
+17:58	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+18:05	 Saída do Centro via Sertório até a parada 52  	[ ver ]\n\
+18:15	 Saída da Cairu via Assis Brasil até a parada 52  	[ ver ]\n\
+18:25	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+18:30	 Saída do Centro via Anchieta até a parada 52  	[ ver ]\n\
+18:40	 Saída da Cairu via Assis Brasil até a parada 52  	[ ver ]\n\
+18:43	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+18:45	 Saída do Centro via Sertório até a parada 52  	[ ver ]\n\
+19:10	 Saída do Centro via Anchieta até a parada 52  	[ ver ]\n\
+19:20	 Saída da Cairu via Assis Brasil até a parada 52  	[ ver ]\n\
+19:25	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+19:25	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+19:30	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+19:55	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+20:10	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+20:35	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+20:35	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+21:15	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+21:35	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+21:39	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+22:08	 Saída do Centro via Assis Brasil até o final da Rua Itararé  	[ ver ]\n\
+22:10	 Saída do IPA via Protásio Alves, Jd. Algarve, Av. Pres. Get. Vargas até a Vila Elza  	[ ver ]\n\
+22:40	 Saída do Centro via Assis Brasil até o final da Rua Itararé  	[ ver ]\n\
+22:45	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+22:45	 Saída da PUC via Ipiranga, Jd. Algarve, Piratini até a Vila Elza  	[ ver ]\n\
+23:10	 Saída do Centro via Assis Brasil até o final da Rua Itararé  	[ ver ]"],
+
+  ["ALVORADA", "POA-ALV", "SABADO", "06:00	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+06:37	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+07:20	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+07:30	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+08:00	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+08:40	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+09:18	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+10:00	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+10:40	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+11:30	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+12:05	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+12:38	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+13:18	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+13:35	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+13:57	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+14:40	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+15:00	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+15:28	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+15:58	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+16:30	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+16:58	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+17:10	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+17:30	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+17:56	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+18:28	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+19:00	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+19:10	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+19:27	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+19:58	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+20:38	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+21:18	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+21:58	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+22:58	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+23:18	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+23:58	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]"],
+
+  ["ALVORADA", "POA-ALV", "DOMINGO", "05:45	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+06:35	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+07:25	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+07:30	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+08:15	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+09:05	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+09:55	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+10:45	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+11:35	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+12:25	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+13:15	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+13:35	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+14:05	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+14:55	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+15:45	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+16:35	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+17:25	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+18:15	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+19:05	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+19:15	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+19:55	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+20:45	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+21:35	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+22:25	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+23:15	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+23:55	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]"],
+
+/*ALVORADA EXECUTIVO*/
+  ["ALVORADA EXECUTIVO", "ALV-POA", "DIA ÚTIL", "06:45	 Saída da parada 52 via Freeway até o Centro  	[ ver ]\n\
+06:50	 Saída da parada 52 via Sertório até o Centro  	[ ver ]\n\
+06:55	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+06:58	 Saída da parada 52 via Sertório até o Centro  	[ ver ]\n\
+07:03	 Saída da parada 52 via Freeway até o Centro  	[ ver ]\n\
+07:21	 Saída da parada 52 via Freeway até o Centro  	[ ver ]\n\
+07:44	 Saída da parada 52 via Freeway até o Centro  	[ ver ]\n\
+08:04	 Saída da parada 52 via Freeway até o Centro  	[ ver ]\n\
+08:15	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+08:25	 Saída da parada 52 via Freeway até o Centro  	[ ver ]\n\
+08:50	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+09:15	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+09:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+10:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+12:15	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+12:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+13:15	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+13:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+17:18	 Saída da parada 52 via Freeway até o Centro  	[ ver ]"],
+
+  ["ALVORADA EXECUTIVO", "ALV-POA", "SABADO", "10:20	 Saída da parada 52 via Freeway até o Centro  	[ ver ]"],
+  
+  ["ALVORADA EXECUTIVO", "POA-ALV", "DIA ÚTIL", "07:30	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+11:30	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+12:10	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+15:55	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+16:25	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+17:29	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+18:00	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+18:27	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+18:45	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+19:40	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+20:20	 Saída do Centro via Freeway até a parada 52  	[ ver ]"],
+
+/*AMERICANA*/
+  ["AMERICANA", "ALV-POA", "DIA ÚTIL", "00:00	 Saída da Vila Elza via Piratini, Americana, Assis Brasil até o Centro  	[ ver ]\n\
+02:50	 Saída da Vila Elza via Piratini, Americana, Assis Brasil até o Centro  	[ ver ]\n\
+03:50	 Saída do Passo da Figueira via Americana, Assis Brasil até o centro  	[ ver ]\n\
+05:10	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+05:40	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+06:05	 Saída da parada 52 Via Freeway até o Centro  	[ ver ]\n\
+06:05	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+06:07	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+06:15	 Saída do Umbu via Americana, Sertório até a Cairu  	[ ver ]\n\
+06:30	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+06:30	 Saída da CEEE via Assis Brasil até o Centro  	[ ver ]\n\
+06:35	 Saída da parada 52 Via Freeway até o Centro  	[ ver ]\n\
+06:36	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+06:40	 Taimbé - Saída da Nova Americana via Itararé, Baltazar, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:40	 Saída da Vila Elza via Piratini, Americana, Sertório até o BIG  	[ ver ]\n\
+06:52	 Saída da CEEE via Assis Brasil até o Centro  	[ ver ]\n\
+06:55	 Saída da parada 52 Via Freeway até o Centro  	[ ver ]\n\
+07:00	 Saída da Stella Maris via Jd. Aparecida, Americana, Sertório até o BIG  	[ ver ]\n\
+07:04	 Saida da Parada 52 via Assis Brasil até a Cairu  	[ ver ]\n\
+07:05	 Saída do Umbu via Americana, Sertório até a Cairu  	[ ver ]\n\
+07:07	 Saída da CEEE via Assis Brasil até o Centro  	[ ver ]\n\
+07:15	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+07:20	 Saída da CEEE via Freeway até o Centro  	[ ver ]\n\
+07:30	 Saída do Umbu via Americana, Sertório até a Cairu  	[ ver ]\n\
+07:32	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+07:36	 Saída da CEEE via Freeway até o Centro  	[ ver ]\n\
+07:48	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+07:55	 Saída da CEEE via Freeway até o Centro  	[ ver ]\n\
+08:00	 Saída da Stella Maris via Jd. Aparecida, Americana, Sertório até o BIG  	[ ver ]\n\
+08:00	 Saída do Umbu via Americana, Sertório até a Cairu  	[ ver ]\n\
+08:00	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+08:15	 Saída da parada 52 Via Freeway até o Centro  	[ ver ]\n\
+08:30	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+08:57	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+09:00	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+09:30	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+10:00	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+10:05	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+10:35	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+11:10	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+11:13	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+11:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+12:20	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+12:21	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+12:55	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+13:29	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+13:30	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+14:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+14:40	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+15:15	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+15:50	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+16:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+17:00	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+17:35	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+18:10	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+18:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+19:05	 Saída do Umbu via Americana, Sertório até a Cairu  	[ ver ]\n\
+19:20	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+19:55	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+20:30	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+21:05	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+22:00	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+23:00	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["AMERICANA", "ALV-POA", "SABADO", "00:00	 Saída da Vila Elza via Piratini, Americana, Assis Brasil até o Centro  	[ ver ]\n\
+02:50	 Saída da Vila Elza via Piratini, Americana, Assis Brasil até o Centro  	[ ver ]\n\
+05:00	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+05:40	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+06:20	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+06:40	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+06:50	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+07:00	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+07:15	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+07:30	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+07:50	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+08:00	 Saída da Stella Maris via Jd. Aparecida, Americana, Sertório até o BIG  	[ ver ]\n\
+08:10	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+08:35	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+08:35	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+09:00	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+09:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+10:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+10:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+11:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+11:55	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+12:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+13:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+14:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+14:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+15:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+16:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+16:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+17:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+18:05	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+18:45	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+19:25	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+20:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+20:45	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+21:25	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+22:05	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+22:55	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+23:55	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["AMERICANA", "ALV-POA", "DOMINGO", "02:50	 Saída da Vila Elza via Piratini, Americana, Assis Brasil até o Centro  	[ ver ]\n\
+05:20	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+06:10	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+07:00	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+07:50	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+08:40	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+09:30	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+10:20	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+11:10	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+12:00	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+12:50	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+13:40	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+14:30	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+15:20	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+16:10	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+17:00	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+17:40	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+18:40	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+19:30	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+20:20	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]\n\
+21:10	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+22:00	 Saída da parada 52 via Porto Rico via Assis Brasil até o Centro  	[ ver ]\n\
+23:10	 Saída da parada 52 via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["AMERICANA", "POA-ALV", "DIA ÚTIL", "00:30	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+01:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+02:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+03:50	 Saída do Centro via Assis Brasil, Americana, Cedro, Flores da Cunha, Piratini até a Vila Elza  	[ ver ]\n\
+06:21	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+07:00	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+07:45	 Saída do Centro via Sertório, Americana até o Umbu  	[ ver ]\n\
+07:50	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+08:17	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+08:53	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+09:29	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+10:05	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+10:50	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+11:17	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+11:53	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+12:20	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+13:15	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+13:45	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+14:20	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+14:55	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+15:30	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+16:10	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+16:39	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+16:46	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+16:50	 Saída do Centro via Sertório, Americana até o Umbu  	[ ver ]\n\
+17:00	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+17:18	 Saída da Cairu via Assis Brasil até parada 52  	[ ver ]\n\
+17:25	 Saída do Centro via Sertório, Americana até o Umbu  	[ ver ]\n\
+17:26	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+17:31	 Saída do Centro via Anchieta até a parada 52  	[ ver ]\n\
+17:42	 Saída da Cairu via Assis Brasil até parada 52  	[ ver ]\n\
+17:50	 Saída do BIG Sertório via Americana, Piratini até a Vila Elza  	[ ver ]\n\
+17:58	 Saída do Centro via Anchieta até a parada 52  	[ ver ]\n\
+18:03	 Saída da Cairu via Assis Brasil até parada 52  	[ ver ]\n\
+18:05	 Saída do BIG Sertório via Americana, Jd. Aparecida até a Stella Maris  	[ ver ]\n\
+18:05	 Saída da Cairu via Sertório, Americana até o Umbu  	[ ver ]\n\
+18:10	 Saída da Cairu via Sertório, Americana até o Umbu  	[ ver ]\n\
+18:25	 Saída da Cairu via Assis Brasil até parada 52  	[ ver ]\n\
+18:34	 Saída do Centro via Sertório, Americana até o Umbu  	[ ver ]\n\
+18:35	 Taimbé - Saída da Praça dos Açorianos via Protásio Alves, Baltazar, Itararé até a Nova Americana  	[ ver ]\n\
+18:38	 Saída da Cairu via Assis Brasil até parada 52  	[ ver ]\n\
+18:45	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+19:00	 Saída do BIG Sertório via Americana, Jd. Aparecida até a Stella Maris  	[ ver ]\n\
+19:10	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+19:20	 Saída do Centro via Sertório, Americana até o Umbu  	[ ver ]\n\
+19:35	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+19:54	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+20:30	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+20:35	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+20:58	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+21:35	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+22:20	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+22:50	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+23:20	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+23:59	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]"],
+
+  ["AMERICANA", "POA-ALV", "SABADO", "00:30	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+01:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+02:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+03:50	 Saída do Centro via Assis Brasil, Americana, Piratini até a Vila Elza  	[ ver ]\n\
+06:24	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+07:00	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+07:40	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+08:20	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+09:05	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+09:40	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+10:20	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+11:00	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+11:50	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+12:05	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+12:20	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+12:57	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+13:38	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+14:18	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+14:53	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+15:18	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+15:40	 Saída do Centro via Sertório, Americana até o Umbu  	[ ver ]\n\
+15:48	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+16:10	 Saída do Centro via Sertório, Americana até o Umbu  	[ ver ]\n\
+16:18	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+16:52	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+17:18	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+17:52	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+18:00	 Saída do BIG Sertório via Americana, Jd. Aparecida até a Stella Maris  	[ ver ]\n\
+18:05	 Saída do Centro via Sertório, Americana até o Umbu  	[ ver ]\n\
+18:17	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+18:52	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+19:18	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+19:50	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+20:20	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+20:58	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+21:40	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+22:20	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+23:04	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+23:45	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]"],
+
+  ["AMERICANA", "POA-ALV", "DOMINGO", "00:30	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+00:45	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+01:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+02:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+03:50	 Saída do Centro via Assis Brasil, Americana, Piratini até a Vila Elza  	[ ver ]\n\
+06:10	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+07:00	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+07:50	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+08:50	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+09:30	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+10:20	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+11:10	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+12:00	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+12:50	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+13:40	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+14:30	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+15:20	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+16:10	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+17:00	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+17:50	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+18:40	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+19:30	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+20:20	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+21:10	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+22:10	 Saída do Centro via Assis Brasil até a parada 52  	[ ver ]\n\
+23:00	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]\n\
+23:59	 Saída do Centro via Assis Brasil via Porto Rico até a parada 52  	[ ver ]"],
+
+/*AMERICANA EXECUTIVO*/
+  ["AMERICANA EXECUTIVO", "ALV-POA", "DIA ÚTIL", "08:54	 Saída da parada 52 via Freeway até o Centro  	[ ver ]\n\
+12:00	 Saída da parada 52 via Freeway até o Centro  	[ ver ]"],
+
+  ["AMERICANA EXECUTIVO", "ALV-POA", "SABADO", "06:55	 Saída da parada 52 via Freeway até o Centro  	[ ver ]\n\
+08:30	 Saída da parada 52 via Freeway até o Centro  	[ ver ]\n\
+10:00	 Saída da parada 52 via Freeway até o Centro  	[ ver ]"],
+
+  ["AMERICANA EXECUTIVO", "POA-ALV", "DIA ÚTIL", "11:15	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+11:50	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+16:00	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+16:45	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+17:45	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+18:09	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+18:18	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+18:54	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+19:10	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+19:30	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+20:05	 Saída do Centro via Freeway até a parada 52  	[ ver ]"],
+
+  ["AMERICANA EXECUTIVO", "POA-ALV", "SABADO", "07:45	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+08:25	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+08:55	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+17:15	 Saída do Centro via Freeway até a parada 52  	[ ver ]\n\
+18:50	 Saída do Centro via Freeway até a parada 52  	[ ver ]"],
+
+/*FERNANDO FERRARI*/
+  ["FERNANDO FERRARI", "ALV-POA", "DIA ÚTIL", "04:50	 Saída da São Pedro via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+05:20	 Saída da São Pedro via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+05:50	 Saída da São Pedro via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+06:10	 Saída da Fernando Ferrari via Assis Brasil até o Centro  	[ ver ]\n\
+06:25	 Saída da Fernando Ferrari via Assis Brasil até o Centro  	[ ver ]\n\
+06:35	 Saída da São Pedro via Fernando Ferrari, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:40	 Saída da Fernando Ferrari via Assis Brasil até o Centro  	[ ver ]\n\
+06:55	 Saída da Fernando Ferrari via Assis Brasil até o Centro  	[ ver ]\n\
+07:10	 Saída da Fernando Ferrari via Assis Brasil até o Centro  	[ ver ]\n\
+07:35	 Saída da Fernando Ferrari via Assis Brasil até o Centro  	[ ver ]\n\
+08:00	 Saída da Fernando Ferrari via Assis Brasil até o Centro  	[ ver ]\n\
+08:25	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+09:55	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+11:25	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+12:55	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+14:40	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+16:55	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+18:10	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+19:15	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+20:00	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+20:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+21:30	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+22:20	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+23:00	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]"],
+
+  ["FERNANDO FERRARI", "ALV-POA", "SABADO", "04:50	 Saída da São Pedro via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+05:20	 Saída da São Pedro via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+05:50	 Saída da São Pedro via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+06:10	 Saída da Fernando Ferrari via Assis Brasil até o Centro  	[ ver ]\n\
+06:25	 Saída da Fernando Ferrari via Assis Brasil até o Centro  	[ ver ]\n\
+06:35	 Saída da São Pedro via Fernando Ferrari, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:40	 Saída da Fernando Ferrari via Assis Brasil até o Centro  	[ ver ]\n\
+06:55	 Saída da Fernando Ferrari via Assis Brasil até o Centro  	[ ver ]\n\
+07:10	 Saída da Fernando Ferrari via Assis Brasil até o Centro  	[ ver ]\n\
+07:35	 Saída da Fernando Ferrari via Assis Brasil até o Centro  	[ ver ]\n\
+08:00	 Saída da Fernando Ferrari via Assis Brasil até o Centro  	[ ver ]\n\
+08:25	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+09:55	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+11:25	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+12:55	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+14:40	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+16:55	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+18:10	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+19:15	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+20:00	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+20:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+21:30	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+22:20	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+23:00	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]"],
+
+  ["FERNANDO FERRARI", "ALV-POA", "DOMINGO", "05:00	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+05:50	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+06:35	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+07:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+08:15	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+09:55	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+10:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+11:35	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+12:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+14:05	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+15:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+16:35	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+17:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+18:15	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+19:05	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+20:45	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+22:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+23:15	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]"],
+
+  ["FERNANDO FERRARI", "POA-ALV", "DIA ÚTIL", "08:38	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+09:14	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+09:45	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+10:26	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+11:02	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+11:38	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+12:14	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+13:26	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+15:10	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+16:40	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+16:55	 Saída da Praça dos Açorianos via Protásio Alves, Fernando Ferrari até a São Pedro  	[ ver ]\n\
+17:22	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+17:53	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+18:38	 Saída do Centro via Assis Brasil até a Fernando Ferrari  	[ ver ]\n\
+19:45	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+20:30	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira PAR  	[ ver ]\n\
+21:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira PAR  	[ ver ]\n\
+21:30	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira PAR  	[ ver ]\n\
+22:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira PAR  	[ ver ]\n\
+22:30	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira PAR  	[ ver ]\n\
+23:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira PAR  	[ ver ]\n\
+23:35	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira PAR  	[ ver ]"],
+
+  ["FERNANDO FERRARI", "POA-ALV", "SABADO", "07:20	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+08:04	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+09:20	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+10:04	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+10:50	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+11:20	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+12:04	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+12:40	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+13:20	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+14:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+14:40	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+15:18	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+16:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+16:38	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+17:21	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+17:58	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+18:18	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+18:40	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+19:25	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+20:04	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+20:40	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+21:22	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+22:02	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+22:38	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+23:20	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+23:59	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]"],
+
+  ["FERNANDO FERRARI", "POA-ALV", "DOMINGO", "05:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+06:05	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+06:55	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+08:40	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+09:25	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+10:15	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+11:05	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+11:55	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+13:35	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+14:25	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+15:15	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+16:05	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+17:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+17:45	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+18:35	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+19:25	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+20:15	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+21:10	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+21:55	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+22:55	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+23:58	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]"],
+
+/*LINHAS IPIRANGA*/
+  ["LINHAS IPIRANGA", "ALV-POA", "DIA ÚTIL", "06:00	 Saída do Umbu via Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+06:00	 Saída da parada 52 via Jd. Algarve, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+06:10	 Saída da Vila Elza via Piratini, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+06:15	 Saída do Passo da Figueira via Ipiranga até a PUC  	[ ver ]\n\
+06:20	 Saída da parada 52 via Jd. Algarve, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+06:25	 Saída da Vila Elza via São Pedro, Piratini, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+06:40	 Saída da parada 52 via Jd. Algarve, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+06:50	 Saída da Rua 17 de Setembro via Jd. Aparecida, Stella Maris, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+07:00	 Saída do Passo da Figueira via Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+07:40	 Saída do Passo da Figueira via Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+08:00	 Saída do Passo da Figueira via Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+09:30	 Saída do Passo da Figueira via Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+11:30	 Saída do Passo da Figueira via Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+12:40	 Saída da Vila Elza via Piratini, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+13:30	 Saída do Passo da Figueira via Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+17:10	 Saída do Passo da Figueira via Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+18:15	 Saída da Vila Elza via Piratini, Ipiranga até o Estádio Beira-Rio  	[ ver ]"],
+
+  ["LINHAS IPIRANGA", "ALV-POA", "SABADO", "06:55	 Saída da Vila Elza via Piratini, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+07:45	 Saída da Vila Elza via Piratini, Ipiranga até o Estádio Beira-Rio  	[ ver ]"],
+
+  ["LINHAS IPIRANGA", "POA-ALV", "DIA ÚTIL", "07:35	 Saída do Estádio Beira-Rio via Ipiranga até o Passo da Figueira  	[ ver ]\n\
+12:45	 Saída do Estádio Beira-Rio via Ipiranga até o Passo da Figueira  	[ ver ]\n\
+14:45	 Saída do Estádio Beira-Rio via Ipiranga, Piratini até a Vila Elza  	[ ver ]\n\
+15:30	 Saída do Estádio Beira-Rio via Ipiranga, Jd. Algarve até a parada 52  	[ ver ]\n\
+16:45	 Saída do Estádio Beira-Rio via Ipiranga até o Passo da Figueira  	[ ver ]\n\
+17:40	 Saída do Estádio Beira-Rio via Ipiranga, Jd. Algarve até a parada 52  	[ ver ]\n\
+17:45	 Saída do Estádio Beira-Rio via Ipiranga, Piratini, São Pedro até a Vila Elza  	[ ver ]\n\
+17:50	 Saída do Estádio Beira-Rio via Ipiranga, Stella Maris, Jd. Aparecida até a Rua 17 de Setembro  	[ ver ]\n\
+18:05	 Saída do Estádio Beira-Rio via Ipiranga até o Umbu  	[ ver ]\n\
+18:15	 Saída da PUC via Ipiranga, Piratini até a Vila Elza  	[ ver ]\n\
+18:45	 Saída do Estádio Beira-Rio via Ipiranga até o Passo da Figueira  	[ ver ]\n\
+19:35	 Saída do Estádio Beira-Rio via Ipiranga até o Passo da Figueira  	[ ver ]\n\
+22:45	 Saída da PUC via Ipiranga, Jd. Algarve, Piratini até a Vila Elza  	[ ver ]\n\
+22:50	 Saída do Estádio Beira-Rio via Ipiranga até o Passo da Figueira  	[ ver ]"],
+
+  ["LINHAS IPIRANGA", "POA-ALV", "SABADO", "17:45	 Saída do Estádio Beira-Rio via Ipiranga, Piratini até a Vila Elza  	[ ver ]"],
+  
+/*LINHAS PROTASIO ALVES*/
+  ["LINHAS PROTASIO ALVES", "ALV-POA", "DIA ÚTIL", "05:20	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+05:30	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+05:45	 Saída da Av. 17 de Setembro via Belo Horizonte, Jd. Aparecida, Stella Maris, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+05:50	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+05:55	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:05	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:10	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:10	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:15	 Saída da Av. 17 de Setembro via Jd. Aparecida, Stella Maris, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:15	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:20	 Saída do Umbu via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:30	 Saída da Av. 17 de Setembro via Belo Horizonte, Jd. Aparecida, Stella Maris, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:30	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:35	 Saída do Umbu via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:35	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:35	 Saída da Salomé via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:35	 Saída da São Pedro via Fernando Ferrari, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:35	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:40	 Taimbé - Saída da Nova Americana via Itararé, Baltazar, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:40	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:40	 Saída da Rua Tiradentes via Jd. Porto Alegre, Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:45	 Saída da Av. 17 de Setembro via Jd. Aparecida, Stella Maris, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:50	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:50	 Saída do Jd. Alvorada via Intersul, Av. Zero Hora, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:55	 Saída da Salomé via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:58	 Saída do Umbu via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:00	 Saída da Av. 17 de Setembro via Jd. Aparecida, Stella Maris, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:00	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:00	 Saída da Rua Tiradentes via Jd. Porto Alegre, Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:10	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:10	 Saída do Passo da Figueira via São Pedro, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:15	 Saída da Salomé via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:20	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:20	 Saída da Rua Tiradentes via Jd. Porto Alegre, Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:40	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:40	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:55	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+08:00	 Saída da Av. 17 de Setembro via Jd. Aparecida, Stella Maris, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+08:05	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+08:15	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+08:15	 Saída da Salomé via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+08:30	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+08:45	 Saída do Jd. Aparecida via Av. Frederico Dihl, Av. Zero Hora, Protásio Alves até o Iguatemi  	[ ver ]\n\
+08:45	 Saída do Passo da Figueira via Pres. Get. Vargas, Protásio Alves até o Iguatemi  	[ ver ]\n\
+08:50	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+09:05	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+09:40	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+10:15	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+10:50	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+11:20	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+11:25	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+11:50	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+12:00	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+12:35	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+13:45	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+14:15	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+14:55	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+15:30	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+16:05	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+17:15	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+17:25	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+17:50	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+18:30	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+18:35	 Saída da Vila Elza via São Pedro, Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+20:05	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+21:10	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+22:45	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]"],
+
+  ["LINHAS PROTASIO ALVES", "ALV-POA", "SABADO", "05:55	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:00	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:30	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:40	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:45	 Saída da Salomé via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:50	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:55	 Saída do Umbu via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:00	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:30	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:30	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+08:00	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+08:05	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+08:45	 Saída do Jd. Aparecida via Av. Frederico Dihl, Av. Zero Hora, Protásio Alves até o Iguatemi  	[ ver ]\n\
+08:45	 Saída do Passo da Figueira via Pres. Get. Vargas, Protásio Alves até o Iguatemi  	[ ver ]\n\
+09:10	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+11:00	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+12:00	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+12:10	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+13:20	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+15:00	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+17:10	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+17:25	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+19:40	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]"],
+
+  ["LINHAS PROTASIO ALVES", "ALV-POA", "DOMINGO", "05:50	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:05	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:00	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+12:00	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+17:25	 Saída da parada 52 via Jd. Algarve, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+17:50	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]"],
+
+  ["LINHAS PROTASIO ALVES", "POA-ALV", "DIA ÚTIL", "06:45	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+07:00	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+07:30	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+08:00	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+09:05	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+09:10	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+10:15	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+10:50	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+11:25	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+11:55	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+12:00	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+12:30	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+12:45	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+13:35	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+13:45	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+14:15	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+14:35	 Saída da Praça dos Açorianos via Protásio Alves até o Umbu  	[ ver ]\n\
+14:50	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+15:30	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+15:45	 Saída da Praça dos Açorianos via Protásio Alves até o Umbu  	[ ver ]\n\
+16:00	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+16:10	 Saída da Rótula Carlos Gomes via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+16:20	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+16:26	 Saída da Praça dos Açorianos via Protásio Alves até o Umbu  	[ ver ]\n\
+16:30	 Saída da Praça dos Açorianos via Protásio Alves, Stella Maris, Jd. Aparecida até a Av. 17 de Setembro  	[ ver ]\n\
+16:32	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+16:38	 Saída da Praça dos Açorianos via Protásio Alves até a Salomé  	[ ver ]\n\
+16:45	 Saída da Praça dos Açorianos via Protásio Alves até o Umbu  	[ ver ]\n\
+16:50	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+16:55	 Saída da Praça dos Açorianos via Protásio Alves, Fernando Ferrari até a São Pedro  	[ ver ]\n\
+17:00	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+17:05	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+17:15	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+17:15	 Saída da Rótula Carlos Gomes via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+17:20	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+17:25	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+17:35	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve Jd.POA até a parada 52  	[ ver ]\n\
+17:37	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+17:40	 Saída da Praça dos Açorianos via Protásio Alves até o Umbu  	[ ver ]\n\
+17:45	 Saída da Praça dos Açorianos via Protásio Alves até a Salomé  	[ ver ]\n\
+17:50	 Saída da Praça dos Açorianos via Protásio Alves, Stella Maris, Jd. Aparecida até a Av. 17 de Setembro  	[ ver ]\n\
+17:58	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+18:00	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+18:03	 Saída da Praça dos Açorianos via Protásio Alves, Av. Zero Hora, Intersul até o Jd. Alvorada  	[ ver ]\n\
+18:06	 Saída da Praça dos Açorianos via Protásio Alves até o Umbu  	[ ver ]\n\
+18:10	 Saída da Praça dos Açorianos via Protásio Alves, Stella Maris, Jd. Aparecida, Belo Horizonte até a Av. 17 de Setembro  	[ ver ]\n\
+18:20	 Saída da Praça dos Açorianos via Protásio Alves até a Salomé  	[ ver ]\n\
+18:25	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+18:30	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+18:35	 Taimbé - Saída da Praça dos Açorianos via Protásio Alves, Baltazar, Itararé até a Nova Americana  	[ ver ]\n\
+18:40	 Saida do Iguatemi via Protásio Alves, Pres. Get. Vargas até o Passo da Figueira  	[ ver ]\n\
+18:43	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+18:45	 Saída do Iguatemi via Protásio Alves, Av. Zero Hora, Av. Frederico Dihl até o Jd. Aparecida  	[ ver ]\n\
+19:00	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+19:05	 Saída da Praça dos Açorianos via Protásio Alves, Stella Maris, Jd. Aparecida até a Av. 17 de Setembro  	[ ver ]\n\
+19:25	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+19:40	 Saída da Praça dos Açorianos via Protásio Alves até o Umbu  	[ ver ]\n\
+19:55	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+20:00	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+20:35	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+21:00	 Saída da Praça dos Açorianos via Protásio Alves, São Pedro até o Passo da Figueira PAR  	[ ver ]\n\
+21:35	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+22:10	 Saída do IPA via Protásio Alves, Jd. Algarve, Av. Pres. Get. Vargas até a Vila Elza  	[ ver ]\n\
+22:15	 Saída da Praça dos Açorianos via Protásio Alves, Piratini, São Pedro até a Vila Elza  	[ ver ]\n\
+22:40	 Saida do Iguatemi via Protásio Alves, Pres. Get. Vargas até o Passo da Figueira  	[ ver ]\n\
+22:45	 Saída do Iguatemi via Protásio Alves, Av. Zero Hora, Av. Frederico Dihl até o Jd. Aparecida  	[ ver ]\n\
+22:45	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+22:50	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]"],
+
+  ["LINHAS PROTASIO ALVES", "POA-ALV", "SABADO", "07:20	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+07:30	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+08:00	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+10:20	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+12:10	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+13:20	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+13:35	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+14:30	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+16:10	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+17:00	 Saída da Praça dos Açorianos via Protásio Alves até a Salomé  	[ ver ]\n\
+17:10	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+18:30	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+18:40	 Saida do Iguatemi via Protásio Alves, Pres. Get. Vargas até o Passo da Figueira  	[ ver ]\n\
+18:45	 Saída do Iguatemi via Protásio Alves, Av. Zero Hora, Av. Frederico Dihl até o Jd. Aparecida  	[ ver ]\n\
+19:10	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+20:50	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+22:40	 Saida do Iguatemi via Protásio Alves, Pres. Get. Vargas até o Passo da Figueira  	[ ver ]\n\
+22:45	 Saída do Iguatemi via Protásio Alves, Av. Zero Hora, Av. Frederico Dihl até o Jd. Aparecida  	[ ver ]"],
+
+  ["LINHAS PROTASIO ALVES", "POA-ALV", "DOMINGO", "07:20	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+07:30	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+08:00	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+13:35	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]\n\
+19:00	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+19:15	 Saída da Praça dos Açorianos via Protásio Alves, Jd. Algarve até a parada 52  	[ ver ]"],
+
+/*PASSO DA FIGUEIRA*/
+  ["PASSO DA FIGUEIRA", "ALV-POA", "DIA ÚTIL", "03:50	 Saída do Passo da Figueira via Americana, Assis Brasil até o centro  	[ ver ]\n\
+04:45	 Saída da Vida Nova via Atalicio A. da Costa, Assis Brasil até o Centro  	[ ver ]\n\
+05:10	 Saída da Nova Alvorada via Assis Brasil até o Centro  	[ ver ]\n\
+05:30	 Saída da Vida Nova, Piratini via Assis Brasil até o Centro  	[ ver ]\n\
+05:45	 Saída da Nova Alvorada via Assis Brasil até o Centro  	[ ver ]\n\
+05:55	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:00	 Saída do Passo da Figueira via Assis Brasil até a Cairu  	[ ver ]\n\
+06:05	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:15	 Saída do Passo da Figueira via Ipiranga até a PUC  	[ ver ]\n\
+06:15	 Saida da São Pedro via Baltazar, Anchieta até a Ceasa  	[ ver ]\n\
+06:15	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:24	 Saída da Vida Nova via Atalicio A. da Costa, Assis Brasil até o Centro  	[ ver ]\n\
+06:30	 Saída da Nova Alvorada via Assis Brasil até o Centro  	[ ver ]\n\
+06:35	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:50	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:52	 Saída do Passo da Figueira via Assis Brasil até o Centro  	[ ver ]\n\
+07:00	 Saída do Passo da Figueira via Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+07:10	 Saída do Passo da Figueira via São Pedro, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:15	 Saída do Passo da Figueira via Americana, Freeway até o Centro  	[ ver ]\n\
+07:31	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+07:40	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:40	 Saída da Vida Nova, Piratini via Assis Brasil até o Centro  	[ ver ]\n\
+07:40	 Saída do Passo da Figueira via Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+08:00	 Saída do Passo da Figueira via Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+08:05	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+08:05	 Saída do Passo da Figueira via Assis Brasil até o Centro  	[ ver ]\n\
+08:25	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+08:30	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+08:45	 Saída do Passo da Figueira via Pres. Get. Vargas, Protásio Alves até o Iguatemi  	[ ver ]\n\
+08:55	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+09:05	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+09:25	 Saída do Passo da Figueira via Assis Brasil até o Centro  	[ ver ]\n\
+09:30	 Saída do Passo da Figueira via Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+09:55	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+10:15	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+10:25	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+10:55	 Saída do Passo da Figueira via Assis Brasil até o Centro  	[ ver ]\n\
+11:25	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+11:25	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+11:30	 Saída do Passo da Figueira via Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+11:55	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+12:25	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+12:35	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+12:55	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+13:25	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+13:30	 Saída do Passo da Figueira via Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+13:45	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+13:55	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+14:40	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+14:55	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+15:25	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+16:10	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+16:55	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+17:10	 Saída do Passo da Figueira via Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+17:15	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+17:40	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+17:50	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+18:10	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+19:15	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+20:00	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+20:05	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+20:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+21:30	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+22:20	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+22:45	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+23:00	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]"],
+
+  ["PASSO DA FIGUEIRA", "ALV-POA", "SABADO", "04:00	 Saída do Passo da Figueira via Assis Brasil até o Centro  	[ ver ]\n\
+04:50	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+05:20	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+05:40	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+05:55	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:00	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+06:20	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+06:40	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:40	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+06:50	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+07:10	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+07:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+07:30	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:40	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+08:00	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+08:05	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+08:20	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+08:40	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+08:45	 Saída do Passo da Figueira via Pres. Get. Vargas, Protásio Alves até o Iguatemi  	[ ver ]\n\
+09:10	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+09:25	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+10:05	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+10:45	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+11:00	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+11:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+12:05	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+12:10	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+12:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+13:20	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+13:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+14:05	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+14:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+15:00	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+15:25	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+16:05	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+16:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+17:10	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+17:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+18:05	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+18:45	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+19:25	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+19:40	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+20:15	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+20:45	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+21:25	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+22:05	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+22:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]"],
+
+  ["PASSO DA FIGUEIRA", "ALV-POA", "DOMINGO", "04:00	 Saída do Passo da Figueira via Assis Brasil até o Centro  	[ ver ]\n\
+05:00	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+05:50	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+05:50	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:35	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+07:00	 Saída do Passo da Figueira via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+08:15	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+09:05	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+09:55	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+10:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+11:35	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+12:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+13:15	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+14:05	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+14:55	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+15:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+16:35	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+17:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+18:15	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+19:05	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+19:55	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+20:45	 Saída do Passo da Figueira via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+21:35	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+22:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+23:15	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]"],
+
+  ["PASSO DA FIGUEIRA", "POA-ALV", "DIA ÚTIL", "04:50	 Saída do Centro via Assis Brasil até o Passo da Figueira  	[ ver ]\n\
+06:00	 Saída do Centro via Assis Brasil até o Passo da Figueira  	[ ver ]\n\
+06:45	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+07:00	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+07:10	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+07:26	 Saída do Centro via Assis Brasil até o Passo da Figueira  	[ ver ]\n\
+07:35	 Saída do Estádio Beira-Rio via Ipiranga até o Passo da Figueira  	[ ver ]\n\
+08:00	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+08:02	 Saída do Centro via Assis Brasil até o Passo da Figueira  	[ ver ]\n\
+08:38	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+09:10	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+09:14	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+09:45	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+10:15	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+10:26	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+11:02	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+11:25	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+11:38	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+12:00	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+12:14	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+12:45	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+12:45	 Saída do Estádio Beira-Rio via Ipiranga até o Passo da Figueira  	[ ver ]\n\
+13:00	 Saída do Centro via Assis Brasil até o Passo da Figueira  	[ ver ]\n\
+13:26	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+13:45	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+14:10	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+14:40	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+15:10	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+15:40	 Saída do Centro via Assis Brasil até o Passo da Figueira  	[ ver ]\n\
+16:00	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+16:10	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+16:10	 Saída da Rótula Carlos Gomes via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+16:40	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+16:45	 Saída do Estádio Beira-Rio via Ipiranga até o Passo da Figueira  	[ ver ]\n\
+17:00	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+17:05	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+17:07	 Saída da Cairu via Assis Brasil até o Passo da Figueira  	[ ver ]\n\
+17:15	 Saída da Rótula Carlos Gomes via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+17:15	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+17:22	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+17:30	 Saída da Ceasa via Anchieta, Baltazar, São Pedro até o Passo da Figueira  	[ ver ]\n\
+17:32	 Saída da Cairu via Assis Brasil até o Passo da Figueira  	[ ver ]\n\
+17:39	 Saída do Centro via Assis Brasil até o Passo da Figueira  	[ ver ]\n\
+17:53	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+18:00	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+18:10	 Saída do Centro via Assis Brasil, Nova Alvorada até a Vida Nova  	[ ver ]\n\
+18:14	 Saída da Cairu via Assis Brasil até o Passo da Figueira  	[ ver ]\n\
+18:30	 Saída da Ceasa via Anchieta, Baltazar, São Pedro até o Passo da Figueira  	[ ver ]\n\
+18:40	 Saida do Iguatemi via Protásio Alves, Pres. Get. Vargas até o Passo da Figueira  	[ ver ]\n\
+18:45	 Saída do Centro via Assis Brasil, Nova Alvorada até a Vida Nova  	[ ver ]\n\
+18:45	 Saída do Estádio Beira-Rio via Ipiranga até o Passo da Figueira  	[ ver ]\n\
+18:50	 Saída da Cairu via Assis Brasil até o Passo da Figueira  	[ ver ]\n\
+19:20	 Saída da Cairu via Assis Brasil até o Passo da Figueira  	[ ver ]\n\
+19:22	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+19:35	 Saída do Estádio Beira-Rio via Ipiranga até o Passo da Figueira  	[ ver ]\n\
+19:45	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+19:50	 Saída do Centro via Assis Brasil, Nova Alvorada até a Vida Nova  	[ ver ]\n\
+20:30	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira PAR  	[ ver ]\n\
+21:00	 Saída da Praça dos Açorianos via Protásio Alves, São Pedro até o Passo da Figueira PAR  	[ ver ]\n\
+21:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira PAR  	[ ver ]\n\
+21:30	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira PAR  	[ ver ]\n\
+22:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira PAR  	[ ver ]\n\
+22:30	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira PAR  	[ ver ]\n\
+22:40	 Saida do Iguatemi via Protásio Alves, Pres. Get. Vargas até o Passo da Figueira  	[ ver ]\n\
+22:50	 Saída do Estádio Beira-Rio via Ipiranga até o Passo da Figueira  	[ ver ]\n\
+23:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira PAR  	[ ver ]\n\
+23:35	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira PAR  	[ ver ]"],
+
+  ["PASSO DA FIGUEIRA", "POA-ALV", "SABADO", "04:50	 Saída do Centro via Assis Brasil até o Passo da Figueira  	[ ver ]\n\
+06:04	 Saída do Centro via Assis Brasil até o Passo da Figueira  	[ ver ]\n\
+06:45	 Saída do Centro via Assis Brasil até o Passo da Figueira  	[ ver ]\n\
+07:20	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+07:20	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+08:00	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+08:04	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+08:42	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+09:20	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+10:04	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+10:20	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+10:50	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+11:20	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+12:04	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+12:10	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+12:40	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+13:20	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+13:20	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+14:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+14:30	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+14:40	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+15:18	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+16:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+16:38	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+17:21	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+17:58	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+18:18	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+18:30	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+18:40	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+18:40	 Saida do Iguatemi via Protásio Alves, Pres. Get. Vargas até o Passo da Figueira  	[ ver ]\n\
+19:25	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+20:04	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+20:40	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+21:22	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+22:02	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+22:38	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+22:40	 Saida do Iguatemi via Protásio Alves, Pres. Get. Vargas até o Passo da Figueira  	[ ver ]\n\
+23:20	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+23:59	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]"],
+
+  ["PASSO DA FIGUEIRA", "POA-ALV", "DOMINGO", "05:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+06:05	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+06:55	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+07:20	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+07:55	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+08:00	 Saída da Praça dos Açorianos via Protásio Alves até o Passo da Figueira  	[ ver ]\n\
+08:40	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+09:25	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+10:15	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+11:05	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+11:55	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+12:45	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+13:35	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+14:25	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+15:15	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+16:05	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+17:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+17:45	 Saída do Centro via Assis Brasil, Fernando Ferrari até o Passo da Figueira  	[ ver ]\n\
+18:35	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+19:25	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+20:15	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+21:10	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+21:55	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+22:55	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+23:58	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]"],
+
+/*PASSO DA FIGUEIRA EXECUTIVO*/
+  ["PASSO DA FIGUEIRA EXECUTIVO", "ALV-POA", "DIA ÚTIL", "06:30	 Saída do Passo da Figueira via Americana, Freeway até o Centro  	[ ver ]\n\
+06:50	 Saída do Passo da Figueira via Americana, Freeway até o Centro  	[ ver ]\n\
+08:20	 Saída do Passo da Figueira via Americana, Freeway até o Centro  	[ ver ]\n\
+08:50	 Saída do Passo da Figueira via Americana, Freeway até o Centro  	[ ver ]\n\
+09:20	 Saída do Passo da Figueira via Americana, Freeway até o Centro  	[ ver ]\n\
+09:50	 Saída do Passo da Figueira via Americana, Freeway até o Centro  	[ ver ]\n\
+13:20	 Saída do Passo da Figueira via Americana, Freeway até o Centro  	[ ver ]"],
+
+  ["PASSO DA FIGUEIRA EXECUTIVO", "ALV-POA", "SABADO", "07:05	 Saída do Passo da Figueira via Americana, Freeway até o Centro  	[ ver ]\n\
+09:20	 Saída do Passo da Figueira via Americana, Freeway até o Centro  	[ ver ]"],
+
+  ["PASSO DA FIGUEIRA EXECUTIVO", "POA-ALV", "DIA ÚTIL", "12:10	 saída do Centro via Americana,Freeway até o Passo da Figueira  	[ ver ]\n\
+18:26	 saída do Centro via Americana,Freeway até o Passo da Figueira  	[ ver ]"],
+
+/*SALOME*/
+  ["SALOME", "ALV-POA", "DIA ÚTIL", "04:50	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+05:15	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+05:40	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+05:50	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+06:03	 Saída da Salomé via Sertório até o Centro  	[ ver ]\n\
+06:05	 Saída da Salomé via Americana, Anchieta até o Centro  	[ ver ]\n\
+06:08	 Saída da Salomé via Assis Brasil até a Cairu  	[ ver ]\n\
+06:23	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+06:27	 Saída da Salomé via Americana, Anchieta até o Centro  	[ ver ]\n\
+06:31	 Saída da Salomé via Sertório até o Centro  	[ ver ]\n\
+06:35	 Saída da Salomé via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:41	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+06:50	 Saída da Salomé via Americana, Anchieta até o Centro  	[ ver ]\n\
+06:55	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+06:55	 Saída da Salomé via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:59	 Saída da Salomé via Sertório até o Centro  	[ ver ]\n\
+07:00	 Saída da Rua Cedro via Assis Brasil até o Centro  	[ ver ]\n\
+07:08	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+07:15	 Saída da Salomé via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:16	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+07:27	 Saída da Salomé via Sertório até o Centro  	[ ver ]\n\
+07:30	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+07:45	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+08:05	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+08:15	 Saída da Salomé via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+08:30	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+09:00	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+09:35	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+10:10	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+10:45	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+11:25	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+11:55	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+12:30	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+13:05	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+13:50	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+14:35	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+15:20	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+16:05	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+16:30	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+17:15	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+17:55	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+18:35	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+19:10	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+19:45	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+20:20	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+21:00	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+21:45	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+22:35	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["SALOME", "ALV-POA", "SABADO", "04:50	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+05:25	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+05:50	 Saída da Salomé via Assis Brasil até a Cairu  	[ ver ]\n\
+06:00	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+06:20	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+06:40	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+06:45	 Saída da Salomé via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:50	 Saída da Salomé via Sertório até o Centro  	[ ver ]\n\
+06:55	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+07:10	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+07:30	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+07:57	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+08:32	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+08:45	 Saída da Salomé via Sertório até o Centro  	[ ver ]\n\
+09:07	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+09:42	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+10:17	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+10:52	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+11:27	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+12:02	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+12:37	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+13:12	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+13:47	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+14:22	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+14:57	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+15:32	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+16:07	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+16:42	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+17:17	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+17:52	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+18:27	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+19:02	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+19:37	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+20:12	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+20:47	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+21:22	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+21:57	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+22:32	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["SALOME", "ALV-POA", "DOMINGO", "05:10	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+06:00	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+06:50	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+07:40	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+08:30	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+09:20	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+10:10	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+11:00	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+11:50	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+12:40	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+13:30	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+14:20	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+15:10	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+16:00	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+16:50	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+17:15	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+17:40	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+18:30	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+19:20	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+20:10	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+21:00	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+21:50	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]\n\
+22:40	 Saída da Salomé via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["SALOME", "POA-ALV", "DIA ÚTIL", "03:50	 Saída do Centro via Assis Brasil, Americana, Cedro, Flores da Cunha, Piratini até a Vila Elza  	[ ver ]\n\
+06:05	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+06:30	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+06:53	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+07:32	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+08:08	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+08:44	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+09:20	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+09:56	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+10:40	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+11:08	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+11:44	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+12:20	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+12:56	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+13:32	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+14:08	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+14:29	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+14:57	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+15:20	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+15:50	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+15:58	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+16:15	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+16:30	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+16:38	 Saída da Praça dos Açorianos via Protásio Alves até a Salomé  	[ ver ]\n\
+16:45	 Saída do Centro via Anchieta, Americana até a Salomé  	[ ver ]\n\
+16:52	 Saída da Cairu via Assis Brasil até a Salomé  	[ ver ]\n\
+17:06	 Saída do Centro via Sertório até a Salomé  	[ ver ]\n\
+17:15	 Saída da Cairu via Assis Brasil até a Salomé  	[ ver ]\n\
+17:17	 Saída do Centro via Anchieta, Americana até a Salomé  	[ ver ]\n\
+17:29	 Saída da Cairu via Assis Brasil até a Salomé  	[ ver ]\n\
+17:44	 Saída da Cairu via Assis Brasil até a Salomé  	[ ver ]\n\
+17:45	 Saída do Centro via Sertório até a Salomé  	[ ver ]\n\
+17:45	 Saída da Praça dos Açorianos via Protásio Alves até a Salomé  	[ ver ]\n\
+17:55	 Saída do Centro via Anchieta, Americana até a Salomé  	[ ver ]\n\
+18:00	 Saída da Cairu via Assis Brasil até a Salomé  	[ ver ]\n\
+18:17	 Saída do Centro via Sertório até a Salomé  	[ ver ]\n\
+18:20	 Saída da Cairu via Assis Brasil até a Salomé  	[ ver ]\n\
+18:20	 Saída da Praça dos Açorianos via Protásio Alves até a Salomé  	[ ver ]\n\
+18:40	 Saída do Centro via Anchieta, Americana até a Salomé  	[ ver ]\n\
+18:50	 Saída da Cairu via Assis Brasil até a Salomé  	[ ver ]\n\
+19:05	 Saída do Centro via Sertório até a Salomé  	[ ver ]\n\
+19:10	 Saída da Cairu via Assis Brasil até a Salomé  	[ ver ]\n\
+19:25	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+19:50	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+20:00	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+20:40	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+21:10	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+21:40	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+22:10	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+22:44	 Saída do Centro via Assis Brasil, Cedro, Salomé até o Umbu  	[ ver ]\n\
+23:35	 Saída do Centro via Assis Brasil, Cedro, Salomé até o Umbu  	[ ver ]"],
+
+  ["SALOME", "POA-ALV", "SABADO", "05:48	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+06:20	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+06:43	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+07:25	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+07:53	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+08:28	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+09:03	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+09:38	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+10:20	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+10:48	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+11:23	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+11:58	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+12:33	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+13:08	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+13:43	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+14:18	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+14:53	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+15:28	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+16:04	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+16:25	 Saída do Centro via Sertório até a Salomé  	[ ver ]\n\
+16:38	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+17:00	 Saída da Praça dos Açorianos via Protásio Alves até a Salomé  	[ ver ]\n\
+17:17	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+17:37	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+17:57	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+18:15	 Saída do Centro via Sertório até a Salomé  	[ ver ]\n\
+18:27	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+18:58	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+19:33	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+20:08	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+20:43	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+21:18	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+21:53	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+22:28	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+23:03	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+23:38	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]"],
+
+  ["SALOME", "POA-ALV", "DOMINGO", "06:20	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+07:20	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+08:00	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+08:50	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+09:40	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+10:30	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+11:20	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+12:10	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+13:00	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+13:50	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+14:40	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+15:30	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+16:20	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+17:10	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+18:00	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+18:30	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+18:58	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+19:40	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+20:30	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+21:20	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+22:10	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+23:00	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]\n\
+23:35	 Saída do Centro via Assis Brasil até a Salomé  	[ ver ]"],
+
+/*SALOME EXECUTIVO*/
+  ["SALOME EXECUTIVO", "ALV-POA", "DIA ÚTIL", "06:20	 Saída da Salomé via Itararé, Freeway até o centro.  	[ ver ]\n\
+06:38	 Saída da Salomé via Itararé, Freeway até o centro.  	[ ver ]\n\
+08:20	 Saída da Salomé via Itararé, Freeway até o centro.  	[ ver ]\n\
+08:55	 Saída da Salomé via Itararé, Freeway até o centro.  	[ ver ]\n\
+12:25	 Saída da Salomé via Itararé, Freeway até o centro.  	[ ver ]\n\
+13:00	 Saída da Salomé via Itararé, Freeway até o centro.  	[ ver ]"],
+
+  ["SALOME EXECUTIVO", "ALV-POA", "SABADO", "07:05	 Saída da Salomé via Itararé, Freeway até o centro.  	[ ver ]\n\
+07:55	 Saída da Salomé via Itararé, Freeway até o centro.  	[ ver ]\n\
+09:00	 Saída da Salomé via Itararé, Freeway até o centro.  	[ ver ]"],
+
+  ["SALOME EXECUTIVO", "POA-ALV", "DIA ÚTIL", "11:05	 Saída do Centro Freeway, via Itararé até a Salomé  	[ ver ]\n\
+12:05	 Saída do Centro Freeway, via Itararé até a Salomé  	[ ver ]\n\
+14:10	 Saída do Centro Freeway, via Itararé até a Salomé  	[ ver ]\n\
+14:55	 Saída do Centro Freeway, via Itararé até a Salomé  	[ ver ]\n\
+15:15	 Saída do Centro Freeway, via Itararé até a Salomé  	[ ver ]\n\
+15:55	 Saída do Centro Freeway, via Itararé até a Salomé  	[ ver ]\n\
+16:25	 Saída do Centro Freeway, via Itararé até a Salomé  	[ ver ]\n\
+17:32	 Saída do Centro Freeway, via Itararé até a Salomé  	[ ver ]\n\
+18:15	 Saída do Centro Freeway, via Itararé até a Salomé  	[ ver ]\n\
+19:25	 Saída do Centro Freeway, via Itararé até a Salomé  	[ ver ]"],
+
+  ["SALOME EXECUTIVO", "POA-ALV", "SABADO", "07:50	 Saída do Centro Freeway, via Itararé até a Salomé  	[ ver ]\n\
+17:05	 Saída do Centro Freeway, via Itararé até a Salomé  	[ ver ]"],
+
+/*SAO PEDRO*/
+  ["SAO PEDRO", "ALV-POA", "DIA ÚTIL", "04:50	 Saída da São Pedro via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+05:20	 Saída da São Pedro via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+05:50	 Saída da São Pedro via Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+06:15	 Saida da São Pedro via Baltazar, Anchieta até a Ceasa  	[ ver ]\n\
+06:20	 Saída da Escola Cléo dos Santos via Assis Brasil até o Centro  	[ ver ]\n\
+06:25	 Saída da Vila Elza via São Pedro, Piratini, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+06:35	 Saída da São Pedro via Fernando Ferrari, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:43	 Saída da Escola Cléo dos Santos via Assis Brasil até o Centro  	[ ver ]\n\
+07:10	 Saída do Passo da Figueira via São Pedro, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:15	 Saída da Escola Cléo dos Santos via Assis Brasil até o Centro  	[ ver ]\n\
+07:31	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+08:25	 Saída da Escola Cléo dos Santos via Assis Brasil até o Centro  	[ ver ]\n\
+08:55	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+10:25	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+11:55	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+12:25	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+13:25	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+13:55	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+15:25	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+16:10	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+17:40	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+18:10	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+18:35	 Saída da Vila Elza via São Pedro, Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+20:00	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+20:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+21:30	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+22:20	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+23:00	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]"],
+
+  ["SAO PEDRO", "ALV-POA", "SABADO", "04:50	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+05:20	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+05:40	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+06:00	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+06:20	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+06:40	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+07:10	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+07:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+08:00	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+08:20	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+08:40	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+09:25	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+10:05	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+11:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+12:05	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+12:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+13:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+14:05	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+14:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+16:05	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+16:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+17:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+18:05	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+18:45	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+20:15	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+21:25	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+22:05	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+22:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]"],
+
+  ["SAO PEDRO", "ALV-POA", "DOMINGO", "05:00	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+05:50	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+06:35	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+07:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+08:15	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+09:05	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+09:55	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+10:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+12:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+13:15	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+14:55	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+15:45	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+16:35	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+17:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+18:15	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+19:55	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+21:35	 Saída do Passo da Figueira via São Pedro, Assis Brasil até o Centro  	[ ver ]\n\
+22:25	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]\n\
+23:15	 Saída do Passo da Figueira via São Pedro, Fernando Ferrari, Assis Brasil até o Centro  	[ ver ]"],
+
+  ["SAO PEDRO", "POA-ALV", "DIA ÚTIL", "07:10	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+08:38	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+09:14	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+09:45	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+10:26	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+11:02	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+11:38	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+13:26	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+14:10	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+14:40	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+16:10	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+16:55	 Saída da Praça dos Açorianos via Protásio Alves, Fernando Ferrari até a São Pedro  	[ ver ]\n\
+17:05	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+17:30	 Saída da Ceasa via Anchieta, Baltazar, São Pedro até o Passo da Figueira  	[ ver ]\n\
+17:35	 Saída do Centro via Assis Brasil até a Escola Cléo dos Santos  	[ ver ]\n\
+17:45	 Saída do Estádio Beira-Rio via Ipiranga, Piratini, São Pedro até a Vila Elza  	[ ver ]\n\
+18:09	 Saída do Centro via Assis Brasil até a Escola Cléo dos Santos  	[ ver ]\n\
+18:30	 Saída da Ceasa via Anchieta, Baltazar, São Pedro até o Passo da Figueira  	[ ver ]\n\
+18:30	 Saída do Centro via Assis Brasil até a Escola Cléo dos Santos  	[ ver ]\n\
+19:10	 Saída do Centro via Assis Brasil até a Escola Cléo dos Santos  	[ ver ]\n\
+19:22	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+19:58	 Saída do Centro via Assis Brasil até a Escola Cléo dos Santos  	[ ver ]\n\
+22:15	 Saída da Praça dos Açorianos via Protásio Alves, Piratini, São Pedro até a Vila Elza  	[ ver ]"],
+
+  ["SAO PEDRO", "POA-ALV", "SABADO", "07:20	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+08:42	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+09:20	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+10:50	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+12:04	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+12:40	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+13:20	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+14:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+14:40	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+15:18	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+16:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+16:38	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+17:21	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+17:58	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+18:18	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+18:40	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+19:25	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+20:04	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+20:40	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+21:22	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+22:02	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+22:38	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+23:20	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+23:59	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]"],
+
+  ["SAO PEDRO", "POA-ALV", "DOMINGO", "05:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+06:05	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+06:55	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+07:55	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+08:40	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+10:15	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+11:55	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+12:45	 Saída do Centro via Assis Brasil, São Pedro até o Passo da Figueira  	[ ver ]\n\
+14:25	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+15:15	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+17:00	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+18:35	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+19:25	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+20:15	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+21:10	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+21:55	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+22:55	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]\n\
+23:58	 Saída do Centro via Assis Brasil, Fernando Ferrari, São Pedro até o Passo da Figueira  	[ ver ]"],
+
+/*TAIMBE*/
+  ["TAIMBE", "ALV-POA", "DIA ÚTIL", "05:00	 Saída da Nova Americana via Itararé, Taimbé, Pátria, Duque de Caxias, Maringá, Artur Garcia, Assis Brasil até o Centro  	[ ver ]\n\
+05:25	 Saída da Nova Americana via Itararé, Taimbé, Pátria, Duque de Caxias, Maringá, Artur Garcia, Assis Brasil até o Centro  	[ ver ]\n\
+05:55	 Saída da Nova Americana via Assis Brasil até o Centro  	[ ver ]\n\
+06:25	 Saída da Nova Americana via Assis Brasil até o Centro  	[ ver ]\n\
+06:40	 Taimbé - Saída da Nova Americana via Itararé, Baltazar, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:50	 Saída da Nova Americana via Assis Brasil até o Centro  	[ ver ]\n\
+06:57	 Saída da Nova Americana via Assis Brasil até o Centro  	[ ver ]\n\
+07:05	 Saída da Nova Americana via Assis Brasil até o Centro  	[ ver ]\n\
+07:45	 Saída da Nova Americana via Assis Brasil até o Centro  	[ ver ]\n\
+09:15	 Saída da Nova Americana via Assis Brasil até o Centro  	[ ver ]\n\
+14:00	 Saída da Nova Americana via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["TAIMBE", "ALV-POA", "SABADO", "05:45	 Saída da Nova Americana via Assis Brasil até o Centro  	[ ver ]\n\
+06:10	 Saída da Nova Americana via Assis Brasil até o Centro  	[ ver ]\n\
+07:10	 Saída da Nova Americana via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["TAIMBE", "ALV-POA", "DOMINGO", "09:00	 Saída da Nova Americana via Assis Brasil até o Centro  	[ ver ]\n\
+17:00	 Saída da Nova Americana via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["TAIMBE", "POA-ALV", "DIA ÚTIL", "18:15	 Saída do Centro via Assis Brasil até a Nova Americana  	[ ver ]\n\
+18:35	 Taimbé - Saída da Praça dos Açorianos via Protásio Alves, Baltazar, Itararé até a Nova Americana  	[ ver ]\n\
+19:15	 Saída do Centro via Assis Brasil até a Nova Americana  	[ ver ]\n\
+20:20	 Saída do Centro via Assis Brasil até a Nova Americana  	[ ver ]"],
+
+  ["TAIMBE", "POA-ALV", "SABADO", "17:45	 Saída do Centro via Assis Brasil até a Nova Americana  	[ ver ]"],
+  
+  ["TAIMBE", "POA-ALV", "DOMINGO", "09:50	 Saída do Centro via Assis Brasil até a Nova Americana  	[ ver ]\n\
+17:50	 Saída do Centro via Assis Brasil até a Nova Americana  	[ ver ]"],
+
+/*UMBU*/
+  ["UMBU", "ALV-POA", "DIA ÚTIL", "04:50	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+05:30	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+05:45	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+06:00	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+06:00	 Saída do Umbu via Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+06:07	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+06:15	 Saída do Umbu via Americana, Sertório até a Cairu  	[ ver ]\n\
+06:18	 Saída do Umbu via Assis Brasil até a Cairu  	[ ver ]\n\
+06:20	 Saída do Umbu via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:28	 Saída do Umbu via Americana, Anchieta até o Centro  	[ ver ]\n\
+06:30	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+06:33	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+06:35	 Saída do Umbu via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:40	 Saída do Umbu via Americana, Anchieta até o Centro  	[ ver ]\n\
+06:45	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+06:50	 Saída do Umbu via Americana, Anchieta até o Centro  	[ ver ]\n\
+06:55	 Saída do Umbu via Baltazar, Anchieta até o Centro  	[ ver ]\n\
+06:58	 Saída do Umbu via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:02	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+07:05	 Saída do Umbu via Americana, Sertório até a Cairu  	[ ver ]\n\
+07:12	 Saída do Umbu via Assis Brasil até a Cairu  	[ ver ]\n\
+07:22	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+07:30	 Saída do Umbu via Americana, Sertório até a Cairu  	[ ver ]\n\
+07:35	 Saída do Umbu via Americana, Anchieta até o Centro  	[ ver ]\n\
+07:45	 Saída do Umbu via Assis Brasil até a Cairu  	[ ver ]\n\
+07:55	 Saída do Umbu via Americana, Anchieta até o Centro  	[ ver ]\n\
+08:00	 Saída do Umbu via Americana, Sertório até a Cairu  	[ ver ]\n\
+08:10	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+08:45	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+08:57	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+09:31	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+10:05	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+10:43	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+11:13	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+11:47	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+12:21	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+13:00	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+13:29	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+14:03	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+14:45	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+15:30	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+16:15	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+17:00	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+17:45	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+18:30	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+19:05	 Saída do Umbu via Americana, Sertório até a Cairu  	[ ver ]\n\
+19:15	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+20:00	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+20:45	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+21:30	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+22:15	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["UMBU", "ALV-POA", "SABADO", "04:45	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+05:30	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+06:00	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+06:20	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+06:40	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+06:50	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+06:55	 Saída do Umbu via Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:00	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+07:20	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+07:40	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+08:00	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+08:20	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+08:35	 Saída do Umbu via Americana, Sertório até o Centro  	[ ver ]\n\
+08:50	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+09:20	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+10:25	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+11:30	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+12:35	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+13:40	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+14:45	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+16:05	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+16:55	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+18:00	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+19:05	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+20:10	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+22:00	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["UMBU", "ALV-POA", "DOMINGO", "04:45	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+05:20	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+06:00	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+06:30	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+07:00	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+08:05	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+09:10	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+10:15	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+11:20	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+12:25	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+13:30	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+14:35	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+15:35	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+16:45	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+17:50	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+18:55	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+20:30	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+21:20	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]\n\
+22:30	 Saída do Umbu via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["UMBU", "POA-ALV", "DIA ÚTIL", "00:30	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+01:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+02:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+07:03	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+07:45	 Saída do Centro via Sertório, Americana até o Umbu  	[ ver ]\n\
+07:55	 Saída da Cairu via Assis Brasil até o Umbu  	[ ver ]\n\
+08:26	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+09:02	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+09:37	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+10:20	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+10:50	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+11:26	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+12:02	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+12:45	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+13:14	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+13:50	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+14:35	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+14:35	 Saída da Praça dos Açorianos via Protásio Alves até o Umbu  	[ ver ]\n\
+15:10	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+15:40	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+15:45	 Saída da Praça dos Açorianos via Protásio Alves até o Umbu  	[ ver ]\n\
+16:03	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+16:20	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+16:26	 Saída da Praça dos Açorianos via Protásio Alves até o Umbu  	[ ver ]\n\
+16:45	 Saída da Praça dos Açorianos via Protásio Alves até o Umbu  	[ ver ]\n\
+16:45	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+16:50	 Saída do Centro via Sertório, Americana até o Umbu  	[ ver ]\n\
+17:05	 Saída da Cairu via Assis Brasil até o Umbu  	[ ver ]\n\
+17:10	 Saída do Centro via Anchieta, Americana até o Umbu  	[ ver ]\n\
+17:22	 Saída da Cairu via Assis Brasil até o Umbu  	[ ver ]\n\
+17:25	 Saída do Centro via Sertório, Americana até o Umbu  	[ ver ]\n\
+17:36	 Saída da Cairu via Assis Brasil até o Umbu  	[ ver ]\n\
+17:40	 Saída da Praça dos Açorianos via Protásio Alves até o Umbu  	[ ver ]\n\
+17:45	 Saída do Centro via Anchieta, Americana até o Umbu  	[ ver ]\n\
+17:54	 Saída da Cairu via Assis Brasil até o Umbu  	[ ver ]\n\
+18:01	 Saída do Centro via Anchieta, Americana até o Umbu  	[ ver ]\n\
+18:05	 Saída do Estádio Beira-Rio via Ipiranga até o Umbu  	[ ver ]\n\
+18:05	 Saída da Cairu via Sertório, Americana até o Umbu  	[ ver ]\n\
+18:06	 Saída da Praça dos Açorianos via Protásio Alves até o Umbu  	[ ver ]\n\
+18:10	 Saída da Cairu via Sertório, Americana até o Umbu  	[ ver ]\n\
+18:20	 Saída do Centro via Anchieta, Americana até o Umbu  	[ ver ]\n\
+18:28	 Saída da Cairu via Assis Brasil até o Umbu  	[ ver ]\n\
+18:34	 Saída do Centro via Sertório, Americana até o Umbu  	[ ver ]\n\
+18:48	 Saída da Cairu via Assis Brasil até o Umbu  	[ ver ]\n\
+19:05	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+19:20	 Saída do Centro via Sertório, Americana até o Umbu  	[ ver ]\n\
+19:26	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+19:40	 Saída da Praça dos Açorianos via Protásio Alves até o Umbu  	[ ver ]\n\
+19:55	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+20:10	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+20:28	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+21:02	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+21:30	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+22:15	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+22:44	 Saída do Centro via Assis Brasil, Cedro, Salomé até o Umbu  	[ ver ]\n\
+23:04	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+23:35	 Saída do Centro via Assis Brasil, Cedro, Salomé até o Umbu  	[ ver ]"],
+
+  ["UMBU", "POA-ALV", "SABADO", "00:30	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+01:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+02:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+07:15	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+08:16	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+09:24	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+10:30	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+11:30	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+12:35	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+13:40	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+14:45	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+15:40	 Saída do Centro via Sertório, Americana até o Umbu  	[ ver ]\n\
+15:50	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+16:10	 Saída do Centro via Sertório, Americana até o Umbu  	[ ver ]\n\
+16:22	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+16:55	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+17:27	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+18:00	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+18:05	 Saída do Centro via Sertório, Americana até o Umbu  	[ ver ]\n\
+18:32	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+19:05	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+19:45	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+20:15	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+21:25	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+22:59	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]"],
+
+  ["UMBU", "POA-ALV", "DOMINGO", "00:30	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+01:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+02:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+07:00	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+08:00	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+09:10	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+10:15	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+11:20	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+12:25	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+13:30	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+14:35	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+15:40	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+16:50	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+17:50	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+19:05	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+20:10	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+21:28	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]\n\
+22:30	 Saída do Centro via Assis Brasil até o Umbu  	[ ver ]"],
+
+/*VILA ELZA*/
+  ["VILA ELZA", "ALV-POA", "DIA ÚTIL", "00:00	 Saída da Vila Elza via Piratini, Americana, Assis Brasil até o Centro  	[ ver ]\n\
+01:00	 Saída da Vila Elza via Piratini, Assis Brasil até o Centro  	[ ver ]\n\
+02:50	 Saída da Vila Elza via Piratini, Americana, Assis Brasil até o Centro  	[ ver ]\n\
+04:45	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+05:20	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+05:20	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+05:45	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+05:53	 Saída da Vila Elza via Sertório até o Centro  	[ ver ]\n\
+06:10	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+06:10	 Saída da Vila Elza via Piratini, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+06:10	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:21	 Saída da Vila Elza via Sertório até o Centro  	[ ver ]\n\
+06:25	 Saída da Vila Elza via São Pedro, Piratini, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+06:30	 Saída da Vila Elza via Americana, Anchieta até o Centro  	[ ver ]\n\
+06:35	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:35	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+06:49	 Saída da Vila Elza via Sertório até a Cairu  	[ ver ]\n\
+06:50	 Saída da Vila Elza via Piratini, Americana, Freeway até o Centro  	[ ver ]\n\
+07:00	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+07:10	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+07:15	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+07:30	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+07:45	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+08:00	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+08:20	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+08:25	 Saída da Vila Elza via Sertório até o Centro  	[ ver ]\n\
+08:40	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+09:00	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+09:33	 Saída da Vila Elza via Sertório até o Centro  	[ ver ]\n\
+09:40	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+10:20	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+11:00	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+11:40	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+11:49	 Saída da Vila Elza via Sertório até o Centro  	[ ver ]\n\
+11:50	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+12:20	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+12:40	 Saída da Vila Elza via Piratini, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+12:57	 Saída da Vila Elza via Sertório até o Centro  	[ ver ]\n\
+13:05	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+13:45	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+14:25	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+15:05	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+15:45	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+16:05	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+16:25	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+17:05	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+17:45	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+18:15	 Saída da Vila Elza via Piratini, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+18:25	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+18:35	 Saída da Vila Elza via São Pedro, Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+19:05	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+19:45	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+20:25	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+21:05	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+21:10	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+21:45	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+22:25	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+23:00	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["VILA ELZA", "ALV-POA", "SABADO", "00:00	 Saída da Vila Elza via Piratini, Americana, Assis Brasil até o Centro  	[ ver ]\n\
+01:00	 Saída da Vila Elza via Piratini, Assis Brasil até o Centro  	[ ver ]\n\
+02:50	 Saída da Vila Elza via Piratini, Americana, Assis Brasil até o Centro  	[ ver ]\n\
+04:45	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+05:15	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+05:40	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+06:00	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+06:20	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+06:40	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+06:45	 Saída da Vila Elza via Sertório até o Centro  	[ ver ]\n\
+06:50	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+06:55	 Saída da Vila Elza via Piratini, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+07:00	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+07:20	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+07:40	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+07:45	 Saída da Vila Elza via Piratini, Ipiranga até o Estádio Beira-Rio  	[ ver ]\n\
+08:00	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+08:24	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+08:30	 Saída da Vila Elza via Sertório até a Cairu  	[ ver ]\n\
+08:59	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+09:34	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+10:09	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+10:44	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+11:19	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+11:54	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+12:29	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+13:04	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+13:39	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+14:14	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+14:49	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+15:24	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+15:59	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+16:34	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+17:09	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+17:44	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+18:19	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+18:54	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+19:29	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+20:04	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+20:39	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+21:14	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+21:49	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+22:24	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+22:59	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["VILA ELZA", "ALV-POA", "DOMINGO", "01:00	 Saída da Vila Elza via Piratini, Assis Brasil até o Centro  	[ ver ]\n\
+02:50	 Saída da Vila Elza via Piratini, Americana, Assis Brasil até o Centro  	[ ver ]\n\
+04:45	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+05:20	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+06:10	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+07:00	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+07:50	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+08:40	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+09:30	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+10:20	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+11:10	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+12:00	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+12:50	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+13:40	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+14:30	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+15:20	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+16:10	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+17:00	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+17:25	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+17:50	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+17:50	 Saída da Vila Elza via Piratini, Protásio Alves até a Praça dos Açorianos  	[ ver ]\n\
+18:15	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+18:40	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+19:30	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+20:20	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+21:10	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+22:00	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]\n\
+22:50	 Saída da Vila Elza via Assis Brasil até o Centro  	[ ver ]"],
+
+  ["VILA ELZA", "POA-ALV", "DIA ÚTIL", "00:01	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+00:30	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+01:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+02:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+03:50	 Saída do Centro via Assis Brasil, Americana, Cedro, Flores da Cunha, Piratini até a Vila Elza  	[ ver ]\n\
+05:35	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+06:15	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+06:40	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+07:01	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+07:50	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+08:20	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+09:05	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+09:32	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+10:15	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+10:44	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+11:20	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+11:56	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+12:32	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+13:15	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+13:44	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+13:57	 Saída do Centro via Sertório até a Vila Elza  	[ ver ]\n\
+14:10	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+14:35	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+14:45	 Saída do Estádio Beira-Rio via Ipiranga, Piratini até a Vila Elza  	[ ver ]\n\
+14:50	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+14:50	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+15:08	 Saída do Centro via Sertório até a Vila Elza  	[ ver ]\n\
+15:23	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+15:50	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+16:07	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+16:16	 Saída do Centro via Sertório até a Vila Elza  	[ ver ]\n\
+16:20	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+16:32	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+16:32	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+16:42	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+16:58	 Saída do Centro via Anchieta, Americana até a Vila Elza  	[ ver ]\n\
+17:13	 Saída da Cairu via Assis Brasil até Vila Elza  	[ ver ]\n\
+17:14	 Saída do Centro via Sertório até a Vila Elza  	[ ver ]\n\
+17:25	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+17:32	 Saída do Centro via Anchieta, Americana até a Vila Elza  	[ ver ]\n\
+17:34	 Saída da Cairu via Assis Brasil até Vila Elza  	[ ver ]\n\
+17:35	 Saída do Centro via Freeway, Americana, Piratini até a Vila Elza  	[ ver ]\n\
+17:37	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+17:45	 Saída do Estádio Beira-Rio via Ipiranga, Piratini, São Pedro até a Vila Elza  	[ ver ]\n\
+17:45	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+17:48	 Saída do Centro via Freeway, Americana, Piratini até a Vila Elza  	[ ver ]\n\
+17:59	 Saída do Centro via Freeway, Americana, Piratini até a Vila Elza  	[ ver ]\n\
+18:05	 Saída da Cairu via Sertório até a Vila Elza  	[ ver ]\n\
+18:07	 Saída do Centro via Anchieta, Americana até a Vila Elza  	[ ver ]\n\
+18:12	 Saída da Cairu via Assis Brasil até Vila Elza  	[ ver ]\n\
+18:15	 Saída da PUC via Ipiranga, Piratini até a Vila Elza  	[ ver ]\n\
+18:21	 Saída do Centro via Freeway, Americana, Piratini até a Vila Elza  	[ ver ]\n\
+18:24	 Saída do Centro via Sertório até a Vila Elza  	[ ver ]\n\
+18:30	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+18:31	 Saída da Cairu via Assis Brasil até Vila Elza  	[ ver ]\n\
+18:50	 Saída da Cairu via Assis Brasil até Vila Elza  	[ ver ]\n\
+18:55	 Saída do Centro via Anchieta, Americana até a Vila Elza  	[ ver ]\n\
+19:00	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+19:05	 Saída do Centro via Freeway, Americana, Piratini até a Vila Elza  	[ ver ]\n\
+19:05	 Saída do Centro via Sertório até a Vila Elza  	[ ver ]\n\
+19:20	 Saída da Cairu via Assis Brasil até Vila Elza  	[ ver ]\n\
+19:40	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+19:52	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+19:55	 Saída da Cairu via Sertório até a Vila Elza  	[ ver ]\n\
+20:00	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+20:15	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+20:55	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+21:15	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+21:48	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+22:10	 Saída do IPA via Protásio Alves, Jd. Algarve, Av. Pres. Get. Vargas até a Vila Elza  	[ ver ]\n\
+22:15	 Saída da Praça dos Açorianos via Protásio Alves, Piratini, São Pedro até a Vila Elza  	[ ver ]\n\
+22:16	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+22:45	 Saída da PUC via Ipiranga, Jd. Algarve, Piratini até a Vila Elza  	[ ver ]\n\
+22:48	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+22:50	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+23:15	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]"],
+
+  ["VILA ELZA", "POA-ALV", "SABADO", "00:30	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+01:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+02:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+03:50	 Saída do Centro via Assis Brasil, Americana, Piratini até a Vila Elza  	[ ver ]\n\
+05:35	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+06:08	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+06:40	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+07:15	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+07:50	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+08:25	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+09:00	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+09:35	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+10:05	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+10:45	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+11:15	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+11:50	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+12:25	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+13:00	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+13:40	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+14:10	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+14:45	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+15:20	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+16:05	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+16:10	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+16:20	 Saída do Centro via Sertório até a Vila Elza  	[ ver ]\n\
+16:30	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+17:05	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+17:40	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+17:45	 Saída do Estádio Beira-Rio via Ipiranga, Piratini até a Vila Elza  	[ ver ]\n\
+18:10	 Saída do Centro via Sertório até a Vila Elza  	[ ver ]\n\
+18:15	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+19:00	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+19:25	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+20:00	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+20:35	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+20:50	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+21:20	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+21:45	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+22:30	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+23:05	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+23:54	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]"],
+
+  ["VILA ELZA", "POA-ALV", "DOMINGO", "00:30	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+01:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+02:00	 Saída do Centro via Assis Brasil, Americana, Umbu, Piratini até a Vila Elza  	[ ver ]\n\
+03:50	 Saída do Centro via Assis Brasil, Americana, Piratini até a Vila Elza  	[ ver ]\n\
+05:40	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+06:30	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+07:20	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+08:10	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+09:00	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+09:50	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+10:40	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+11:30	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+12:20	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+13:10	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+14:00	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+14:50	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+15:40	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+16:30	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+17:20	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+18:00	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+18:35	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+19:00	 Saída da Praça dos Açorianos via Protásio Alves, Piratini até a Vila Elza  	[ ver ]\n\
+19:00	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+19:30	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+20:00	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+20:40	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+21:40	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+22:20	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+23:10	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]\n\
+23:59	 Saída do Centro via Assis Brasil até a Vila Elza  	[ ver ]"],
+
+/*VILA ELZA EXECUTIVO*/
+  ["VILA ELZA EXECUTIVO", "ALV-POA", "DIA ÚTIL", "06:05	 Saída da Vila Elza via Americana, Freeway até o Centro  	[ ver ]\n\
+06:30	 Saída da Vila Elza via Americana, Freeway até o Centro  	[ ver ]\n\
+07:05	 Saída da Vila Elza via Americana, Freeway até o Centro  	[ ver ]\n\
+07:25	 Saída da Vila Elza via Americana, Freeway até o Centro  	[ ver ]\n\
+07:40	 Saída da Vila Elza via Americana, Freeway até o Centro  	[ ver ]\n\
+09:35	 Saída da Vila Elza via Americana, Freeway até o Centro  	[ ver ]\n\
+10:15	 Saída da Vila Elza via Americana, Freeway até o Centro  	[ ver ]\n\
+12:15	 Saída da Vila Elza via Americana, Freeway até o Centro  	[ ver ]\n\
+13:00	 Saída da Vila Elza via Americana, Freeway até o Centro  	[ ver ]\n\
+13:40	 Saída da Vila Elza via Americana, Freeway até o Centro  	[ ver ]"],
+
+  ["VILA ELZA EXECUTIVO", "ALV-POA", "SABADO", "06:55	 Saída da Vila Elza via Americana, Freeway até o Centro  	[ ver ]\n\
+08:55	 Saída da Vila Elza via Americana, Freeway até o Centro  	[ ver ]\n\
+16:20	 Saída da Vila Elza via Americana, Freeway até o Centro  	[ ver ]\n\
+16:45	 Saída da Vila Elza via Americana, Freeway até o Centro  	[ ver ]\n\
+17:55	 Saída da Vila Elza via Americana, Freeway até o Centro  	[ ver ]"],
+
+  ["VILA ELZA EXECUTIVO", "POA-ALV", "DIA ÚTIL", "11:15	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+11:55	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+12:30	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+13:20	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+14:30	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+14:55	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+15:20	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+15:45	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+16:35	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+16:50	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+17:00	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+17:30	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+18:06	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+18:42	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+19:30	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+20:00	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+20:15	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]"],
+
+  ["VILA ELZA EXECUTIVO", "POA-ALV", "SABADO", "07:45	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+15:15	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+15:50	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+16:50	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+17:45	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+18:20	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]\n\
+19:05	 Saída do Centro via Freeway, Americana até a Vila Elza  	[ ver ]"]
+];
