@@ -417,6 +417,11 @@ onload = function () {
   divAreaResumo.id = 'divAreaResumo';
   divAreaResumo.innerHTML = '{divAreaResumo}';
   divOpt.appendChild(divAreaResumo);
+  
+  var divAreaCred = document.createElement('div');
+  divAreaCred.id = 'divAreaCred';
+  divAreaCred.innerHTML = 'Desenvolvido por Jean Farias Roldao &lt;jeanroldao@gmail.com&gt;';
+  divOpt.appendChild(divAreaCred);
 }
 
 function carregaOpt() {
@@ -502,7 +507,7 @@ function getContentsFromUrl(url, fCallback) {
 
     var id = (new Date()).getTime();
 	//var url = 'http://jeanfarias.webcindario.com/rest.php?url=' + escape(url) + '&__=' + id + '&callback=?';
-	var url = 'rest.php?url=' + escape(url) + '&__=' + id + '&callback=?';
+	//var url = 'rest.php?url=' + escape(url) + '&__=' + id + '&callback=?';
     
 	$.getJSON(url, function(data) {
 	  fCallback(data);
@@ -521,7 +526,7 @@ function getContentsFromUrl(url, fCallback) {
 function nocallback() {}
 </script>
 </head>
-<body>
-<div id="conteudo">{conteudo}</div>
+<body style="background-color: lightgrey;">
+<div id="conteudo">carregando...</div>
 </body>
 </html>
