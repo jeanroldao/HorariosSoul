@@ -128,6 +128,10 @@ function insertHtml(tag) {
   }
 }
 
+function novaLinha() {
+  conteudo.appendChild(document.createElement('br'));
+}
+
 
 function loadFromSoul() {
   getContentsFromUrl('http://www.soul.com.br/site/itinerarios.php?', function(html){
@@ -290,7 +294,7 @@ onload = function () {
   var campoPesquisa = document.createElement('input');
   conteudo.appendChild(campoPesquisa);
   
-  insertHtml('<br />');
+  novaLinha();
   
   
   var horaini = new Date();
@@ -301,7 +305,7 @@ onload = function () {
   campoHoraIni.value = horaini.toLocaleTimeString();
   conteudo.appendChild(campoHoraIni);
   
-  insertHtml('<br />');
+  novaLinha();
   
   var horafim = new Date();
   horafim.setHours(horafim.getHours() + 1);
@@ -311,7 +315,7 @@ onload = function () {
   campoHoraFim.value = horafim.toLocaleTimeString();
   conteudo.appendChild(campoHoraFim);
   
-  insertHtml('<br />');
+  novaLinha();
   
   insertHtml('<span>Dia</span>');
   var selectDia = document.createElement('select');
@@ -323,7 +327,7 @@ onload = function () {
     selectDia.add(optionDia);
   }
   conteudo.appendChild(selectDia);
-  insertHtml('<br />');
+  novaLinha();
 
   insertHtml('<span>Sentido</span>');
   var selectSentido = document.createElement('select');
@@ -335,13 +339,14 @@ onload = function () {
     selectSentido.add(optionSentido);
   }
   conteudo.appendChild(selectSentido);
-  insertHtml('<br />');
+  novaLinha();
 
   
   var linhas = statistics();
   
   var selectLinhas = document.createElement('select');
   selectLinhas.multiple = true;
+  selectLinhas.style.width = '100%'
   
   for (var linha in linhas) {
     var optionLinha = document.createElement('option');
@@ -387,7 +392,7 @@ onload = function () {
   
   var btnOpt = document.createElement('input');
   btnOpt.type = 'button';
-  btnOpt.value = 'Opções';
+  btnOpt.value = 'Ajuda';
   btnOpt.onclick = function() {
     $(conteudo).hide();
 	$(divOpt).show();
@@ -413,20 +418,28 @@ onload = function () {
       loadFromSoul();
 	}
   }
-  divOpt.appendChild(btnAtualizar);
+  //divOpt.appendChild(btnAtualizar);
   
   var divAreaResumo = document.createElement('div');
   divAreaResumo.id = 'divAreaResumo';
   divAreaResumo.innerHTML = '{divAreaResumo}';
-  divOpt.appendChild(divAreaResumo);
+  //divOpt.appendChild(divAreaResumo);
   
   var divAreaCred = document.createElement('div');
   divAreaCred.id = 'divAreaCred';
-  divAreaCred.innerHTML = 'Desenvolvido por Jean Farias Roldao &lt;jeanroldao@gmail.com&gt;';
+  divAreaCred.innerHTML = [
+    'D&uacute;vidas ou sugest&otilde;es mande um email :)',
+    'Desenvolvido por Jean Farias Rold&atilde;o', 
+	'<a href="mailto:jeanroldao@gmail.com">jeanroldao@gmail.com</a>',
+	'Projeto open source, c&oacute;digo dispon&iacute;vel no GitHub',
+	'<a href="https://github.com/jeanroldao/HorariosSoul.git">https://github.com/jeanroldao/HorariosSoul.git</a>'
+  ].join('<br /'+'>');
   divOpt.appendChild(divAreaCred);
 }
 
 function carregaOpt() {
+  return;
+  /*
   var divAreaResumo = document.getElementById('divAreaResumo');
   divAreaResumo.innerHTML = '';
   var table = document.createElement('table');
@@ -449,6 +462,7 @@ function carregaOpt() {
 	}
     criaLinha(table, [tabs[i], getTabelaStorage(tabs[i]).length, btn]);
   }
+  */
 }
 
 function refreshPct(pct) {
@@ -462,10 +476,14 @@ function refreshPct(pct) {
 function montaGrid(lista) {
 
   var table = getTable();
-  criaLinha(table, ['Hora', 'Linha', 'Descrição']);
-  for (var i = 0; i < lista.length; i++) {
-    var linha = lista[i];
-	criaLinha(table, [linha.hora, linha.linha, linha.descricao]);
+  if (lista.length == 0) {
+    criaLinha(table, ['Sem linhas para essa pesquisa, mude o filtro para resultados diferentes']);
+  } else {
+    criaLinha(table, ['Hora', 'Linha', 'Descri&ccedil;&atilde;o']);
+    for (var i = 0; i < lista.length; i++) {
+      var linha = lista[i];
+	  criaLinha(table, [linha.hora, linha.linha, linha.descricao]);
+    }
   }
 }
 
@@ -485,7 +503,7 @@ function criaLinha(table, campos) {
   for (var i = 0; i < campos.length; i++) {
     var td = document.createElement('td');
 	if (typeof campos[i] != 'object') {
-	  td.textContent = campos[i];
+	  td.innerHTML = campos[i];
 	} else {
 	  td.appendChild(campos[i]);
 	}
