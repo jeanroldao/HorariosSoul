@@ -42,6 +42,7 @@
    <!--<preference name="android-minSdkVersion" value="11" />-->
    <preference name="permissions" value="none"/>
    <preference name="phonegap-version" value="2.9.0" />
+   <preference name="android-installLocation" value="auto" />
    
    <icon src="soul.jpg" />
    
