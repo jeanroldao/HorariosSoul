@@ -6,7 +6,7 @@ table.borda {
     border-collapse: collapse;
 }
 
-table.borda td {
+table.borda td, table.borda th {
     border: 1px solid black;
     boder-collapse: collapse;
     padding: 3px;
@@ -232,7 +232,8 @@ onload = function () {
   var divAreaCred = document.createElement('div');
   divAreaCred.id = 'divAreaCred';
   divAreaCred.innerHTML = [
-    '<hr /'+'>Vers&atilde;o 1.1.4',
+    '<hr /'+'>Total de linhas registradas atualmente: '+tabelaHorarios.length,
+    'Vers&atilde;o 1.1.5',
     '<a href="javascript:window.open(\'https://github.com/jeanroldao/HorariosSoul/commits/master\', \'_blank\', \'location=yes\');">Ver ultimas altera&ccedil;&otilde;es</a>',
     '<hr /'+'>D&uacute;vidas ou sugest&otilde;es mande um email :)',
     'Desenvolvido por Jean Farias Rold&atilde;o', 
@@ -247,10 +248,18 @@ function montaGrid(lista) {
 
   var table = getTable();
   if (lista.length == 0) {
-    criaLinha(table, ['Sem linhas para essa pesquisa, mude o filtro para resultados diferentes']);
+    criaLinha(table, ['<b>Sem linhas para essa pesquisa, mude o filtro para resultados diferentes</b>']);
   } else {
-    criaLinha(table, ['Hora', 'Linha', 'Descri&ccedil;&atilde;o']);
-    for (var i = 0; i < lista.length; i++) {
+  
+	var total_linhas = lista.length;
+    var tr = document.createElement('tr');
+    //var th = document.createElement('th');
+	var prural = total_linhas == 1 ? '' : 's';
+	tr.innerHTML = '<th colspan="3">' + total_linhas + ' linha'+prural+' encontrada'+prural+'</th>';
+	table.appendChild(tr);
+	//criaLinha(table, ['', '', total_linhas + ' linhas encontradas']);
+    criaLinha(table, ['<b>Hora</b>', '<b>Linha</b>', '<b>Descri&ccedil;&atilde;o</b>']);
+    for (var i = 0; i < total_linhas; i++) {
       var linha = lista[i];
       criaLinha(table, [linha.hora, linha.linha, linha.descricao]);
     }
