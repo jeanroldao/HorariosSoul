@@ -96,6 +96,17 @@ function carregaDadosTabela() {
 	return false;
 }
 
+function formatTime(time) {
+	var horas = time.getHours();
+	if (horas < 10) {
+		horas = "0" + horas;
+	}
+	var minutos = time.getSeconds();
+	if (minutos < 10) {
+		minutos = "0" + minutos;
+	}
+	return horas + ":" + minutos;
+}
 
 var conteudo = null;
 onload = function () {
@@ -119,7 +130,7 @@ onload = function () {
   
   insertHtml('<span>Hora inicial</span>');
   var campoHoraIni = document.createElement('input');
-  campoHoraIni.value = horaini.toLocaleTimeString();
+  campoHoraIni.value = formatTime(horaini);
   conteudo.appendChild(campoHoraIni);
   
   novaLinha();
@@ -129,7 +140,7 @@ onload = function () {
   
   insertHtml('<span>Hora final</span>');
   var campoHoraFim = document.createElement('input');
-  campoHoraFim.value = horafim.toLocaleTimeString();
+  campoHoraFim.value = formatTime(horafim);
   conteudo.appendChild(campoHoraFim);
   
   novaLinha();
@@ -235,7 +246,7 @@ onload = function () {
   divAreaCred.id = 'divAreaCred';
   divAreaCred.innerHTML = [
     '<hr /'+'>Quantidade de linhas: '+tabelaHorarios.length,
-    'Vers&atilde;o 1.1.7',
+    'Vers&atilde;o 1.1.8',
     '<a href="javascript:window.open(\'https://github.com/jeanroldao/HorariosSoul/commits/master\', \'_blank\', \'location=yes\');">Ver ultimas altera&ccedil;&otilde;es</a>',
     '<hr /'+'>D&uacute;vidas ou sugest&otilde;es mande um email :)',
     'Desenvolvido por Jean Farias Rold&atilde;o', 
