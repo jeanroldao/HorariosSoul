@@ -22,6 +22,7 @@
    
    <preference name="permissions" value="none"/>
    <preference name="phonegap-version" value="3.3.0" />
+   <preference name="android-targetSdkVersion" value="19" /> <!-- Android 4.4 -->
    <preference name="android-installLocation" value="auto" />
    
    <icon src="soul.jpg" />
