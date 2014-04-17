@@ -199,15 +199,36 @@ onload = function () {
       }
     }
     //console.log(selecao);
-    var resultado = busca(function(item){
+	var resultado = [];
+	if (campoHoraIni.value < campoHoraFim.value) {
+		resultado = busca(function(item){
       
-      return (item.descricao.toLowerCase().indexOf(campoPesquisa.value.toLowerCase()) != -1)
-          && (selecao.length == 0 || selecao.indexOf(item.linha) != -1)
-          && item.dia == selectDia.options[selectDia.selectedIndex].value
-          && item.sentido == selectSentido.options[selectSentido.selectedIndex].value
-          && item.hora >= campoHoraIni.value
-          && item.hora <= campoHoraFim.value;
-    });
+		  return (item.descricao.toLowerCase().indexOf(campoPesquisa.value.toLowerCase()) != -1)
+			  && (selecao.length == 0 || selecao.indexOf(item.linha) != -1)
+			  && item.dia == selectDia.options[selectDia.selectedIndex].value
+			  && item.sentido == selectSentido.options[selectSentido.selectedIndex].value
+			  && item.hora >= campoHoraIni.value
+			  && item.hora <= campoHoraFim.value;
+		});
+	} else {
+		resultado = busca(function(item){
+      
+		  return (item.descricao.toLowerCase().indexOf(campoPesquisa.value.toLowerCase()) != -1)
+			  && (selecao.length == 0 || selecao.indexOf(item.linha) != -1)
+			  && item.dia == selectDia.options[selectDia.selectedIndex].value
+			  && item.sentido == selectSentido.options[selectSentido.selectedIndex].value
+			  && item.hora >= campoHoraIni.value;
+		});
+		
+		resultado = resultado.concat(busca(function(item){
+      
+		  return (item.descricao.toLowerCase().indexOf(campoPesquisa.value.toLowerCase()) != -1)
+			  && (selecao.length == 0 || selecao.indexOf(item.linha) != -1)
+			  && item.dia == selectDia.options[selectDia.selectedIndex].value
+			  && item.sentido == selectSentido.options[selectSentido.selectedIndex].value
+			  && item.hora <= campoHoraFim.value;
+		}));
+	}
     //console.log(resultado);
     montaGrid(resultado);
   };
@@ -246,7 +267,7 @@ onload = function () {
   divAreaCred.id = 'divAreaCred';
   divAreaCred.innerHTML = [
     '<hr /'+'>Quantidade de linhas: '+tabelaHorarios.length,
-    'Vers&atilde;o 1.1.8',
+    'Vers&atilde;o 1.1.9',
     '<a href="javascript:window.open(\'https://github.com/jeanroldao/HorariosSoul/commits/master\', \'_blank\', \'location=yes\');">Ver ultimas altera&ccedil;&otilde;es</a>',
     '<hr /'+'>D&uacute;vidas ou sugest&otilde;es mande um email :)',
     'Desenvolvido por Jean Farias Rold&atilde;o', 
