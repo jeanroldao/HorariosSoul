@@ -12,7 +12,7 @@ table.borda td, table.borda th {
     padding: 3px;
 }
 </style>
-<script src="dados-2014-04-14.js"></script>
+<script src="dados-2014-04-27.js"></script>
 <script>
 //ident 2 spaces
 
@@ -56,13 +56,13 @@ function getDias() {
 function busca(filtro) {
   //tabelaHorarios
   
-  var listraFiltrada = [];
+  var listaFiltrada = [];
   for (var i = 0; i < tabelaHorarios.length; i++ ) {
     if (filtro(tabelaHorarios[i])) {
-      listraFiltrada.push(tabelaHorarios[i]);
+      listaFiltrada.push(tabelaHorarios[i]);
     }
   }
-  listraFiltrada.sort(function(a,b){
+  listaFiltrada.sort(function(a,b){
     //return a.hora < b.hora;
     if (a.hora < b.hora) {
       return -1;
@@ -76,7 +76,7 @@ function busca(filtro) {
       return 0;
     }
   });
-  return listraFiltrada;
+  return listaFiltrada;
 }
 
 function insertHtml(tag) {
@@ -267,7 +267,7 @@ onload = function () {
   divAreaCred.id = 'divAreaCred';
   divAreaCred.innerHTML = [
     '<hr /'+'>Quantidade de linhas: '+tabelaHorarios.length,
-    'Vers&atilde;o 1.1.9',
+    'Vers&atilde;o 1.1.10',
     '<a href="javascript:window.open(\'https://github.com/jeanroldao/HorariosSoul/commits/master\', \'_blank\', \'location=yes\');">Ver ultimas altera&ccedil;&otilde;es</a>',
     '<hr /'+'>D&uacute;vidas ou sugest&otilde;es mande um email :)',
     'Desenvolvido por Jean Farias Rold&atilde;o', 
