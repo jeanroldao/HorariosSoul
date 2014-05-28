@@ -3,13 +3,6 @@ tabelaHorarios.push({
 	"sentido": "POA-ALV", 
 	"linha":"LINHAS TRIANGULO", 
 	"dia":"DIA ÚTIL",
-	"hora":"18:25", 
-	"descricao":"Alvorada"
-});
-tabelaHorarios.push({
-	"sentido": "POA-ALV", 
-	"linha":"LINHAS TRIANGULO", 
-	"dia":"DIA ÚTIL",
 	"hora":"18:40", 
 	"descricao":"Portoverde via Jd. Algarve"
 });
@@ -82,4 +75,11 @@ tabelaHorarios.push({
 	"dia":"DIA ÚTIL",
 	"hora":"18:35", 
 	"descricao":"Umbú"
+});
+tabelaHorarios.push({
+	"sentido": "POA-ALV", 
+	"linha":"LINHAS TRIANGULO", 
+	"dia":"DIA ÚTIL",
+	"hora":"17:45", 
+	"descricao":"Jardim Aparecida"
 });
