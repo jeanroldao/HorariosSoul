@@ -2,7 +2,7 @@
    <widget xmlns           = "http://www.w3.org/ns/widgets"
            xmlns:gap       = "http://phonegap.com/ns/1.0"
            id              = "com.phonegap.HorarioSoul"
-           version         = "1.1.12">
+           version         = "1.1.13">
 
    <name>Horarios Soul</name>
 
@@ -25,7 +25,7 @@
    <preference name="android-targetSdkVersion" value="19" /> <!-- Android 4.4 -->
    <preference name="android-installLocation" value="auto" />
    
-   <icon src="soul.jpg" />
+   <icon src="soul-novo.png" />
    
    <access origin="*" />
  </widget>
