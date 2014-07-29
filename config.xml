@@ -2,7 +2,7 @@
    <widget xmlns           = "http://www.w3.org/ns/widgets"
            xmlns:gap       = "http://phonegap.com/ns/1.0"
            id              = "com.phonegap.HorarioSoul"
-           version         = "1.1.14">
+           version         = "1.1.15">
 
    <name>Horarios Soul</name>
 
@@ -15,14 +15,15 @@
    </author>
 
    <gap:platforms>
-       <gap:platform name="android" minVersion="2.1" />
+       <gap:platform name="android" minVersion="2.0" />
    </gap:platforms>
    
    <feature name="http://api.phonegap.com/1.0/device"/>
    
    <preference name="permissions" value="none"/>
    <preference name="phonegap-version" value="3.3.0" />
-   <preference name="android-targetSdkVersion" value="19" /> <!-- Android 4.4 -->
+   <preference name="android-targetSdkVersion" value="5" /> <!-- Android 2.0 -->
+   <preference name="android-maxSdkVersion" value="5" /> <!-- Android 2.0 -->
    <preference name="android-installLocation" value="auto" />
    
    <icon src="soul.jpg" />
